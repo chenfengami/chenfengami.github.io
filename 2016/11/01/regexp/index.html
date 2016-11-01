@@ -84,15 +84,25 @@
 
 
 
-<meta name="description" content="身边有个太阳,何必仰光">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小太阳">
-<meta property="og:url" content="http://yoursite.com/archives/2016/10/index.html">
+<meta name="description" content="1.正则表达式的方法（test）   var re = /a/;   var str = “agf4567gf” re .test(str )//如果成功返回true 否则返回false
+re.test(str);//如果str里有a，则返回true,否则返回false
+2.转译字符
+\d 数字 \D 非数字\s 空格 \S 非空格\b 独立 \B 非独立 // \b 当前匹配的内容是否是开头 空">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式 规则表达式">
+<meta property="og:url" content="http://yoursite.com/2016/11/01/regexp/index.html">
 <meta property="og:site_name" content="小太阳">
-<meta property="og:description" content="身边有个太阳,何必仰光">
+<meta property="og:description" content="1.正则表达式的方法（test）   var re = /a/;   var str = “agf4567gf” re .test(str )//如果成功返回true 否则返回false
+re.test(str);//如果str里有a，则返回true,否则返回false
+2.转译字符
+\d 数字 \D 非数字\s 空格 \S 非空格\b 独立 \B 非独立 // \b 当前匹配的内容是否是开头 空">
+<meta property="og:updated_time" content="2016-11-01T12:37:49.117Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小太阳">
-<meta name="twitter:description" content="身边有个太阳,何必仰光">
+<meta name="twitter:title" content="正则表达式 规则表达式">
+<meta name="twitter:description" content="1.正则表达式的方法（test）   var re = /a/;   var str = “agf4567gf” re .test(str )//如果成功返回true 否则返回false
+re.test(str);//如果str里有a，则返回true,否则返回false
+2.转译字符
+\d 数字 \D 非数字\s 空格 \S 非空格\b 独立 \B 非独立 // \b 当前匹配的内容是否是开头 空">
 
 
 
@@ -113,10 +123,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2016/10/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/01/regexp/"/>
 
 
-  <title> 归档 | 小太阳 </title>
+  <title> 正则表达式 规则表达式 | 小太阳 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -137,7 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -235,66 +245,165 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 2 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                正则表达式 规则表达式
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-01T20:34:41+08:00" content="2016-11-01">
+              2016-11-01
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/01/regexp/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/11/01/regexp/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <p>1.正则表达式的方法（test）<br>   var re = /a/;<br>   var str = “agf4567gf”<br> re .test(str )//如果成功返回true 否则返回false</p>
+<pre><code>re.test(str);//如果str里有a，则返回true,否则返回false
+</code></pre><p>2.转译字符</p>
+<p>\d 数字 \D 非数字<br>\s 空格 \S 非空格<br>\b 独立 \B 非独立 // \b 当前匹配的内容是否是开头 空格 结尾<br>\w 字符 \W 非字符 空格 汉字 {} @ * ….不算字符<br>\u4e00-\u9fa5 匹配中文</p>
+<p>3.特点<br>  //如果规则匹配成功 那么立即停止</p>
+<p>4.标识<br>    g:全部(循环字符串)<br>    i:(不区分大小写) //运用在验证码</p>
+<p>5.正则表达式方法（search）<br>//如果匹配成功则1返回匹配成功的下标 没找到返回-1<br> str.search(re);</p>
+<p>6.正则表达式方法(match)<br>//匹配成功返回数组内容,否则返回一个null</p>
+<p>7.量词</p>
+<ul>
+<li>最少出现一次<br>{n,m}至少出现n次，最多m次<br>{n,}最少n次<br>{n}刚好n次<br>{0,} * 任意次<br>? 0或1次</li>
+</ul>
+<p>8.正则表达式方法(replace(re,””))<br>//用””中的内容替换掉re<br>  //  第一个参数也可以写函数<br>   replace(re,function(){</p>
+<p>})<br>9.匹配子项<br>  //当看见表达式规则里出现() 那么这个括号就是子项<br>   //函数内的第一个参数表示：re表达式的整体<br>     第二个参数表示：第一个子项，以此类推</p>
+<ol>
+<li><p>“.”在正则的规则内表示所有 （只占一位）</p>
+</li>
+<li><p>var reg = /(ab)\1/;  \1表示重复匹配第一个子项 即 abab<br>var reg = /(ab)(cd)\2/;    表示重复匹配第二个子项 即abcdcd  依次类推</p>
+</li>
+</ol>
+<p>12.匹配字符类<br>//[]<br>// ^ ：非</p>
+<p>13./^ $/ 以什么开始，以什么结束</p>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/path/to/wechat-reward-image" alt="ChaunceyAmy WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
       
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/path/to/alipay-reward-image" alt="ChaunceyAmy Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
+    <footer class="post-footer">
+      
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/31/hello-world/" itemprop="url">
-              
-                <span itemprop="name">五种小div在大div中水平垂直居中方法</span>
-              
-            </a>
-        
-      </h1>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/31/hello-world/" rel="next" title="五种小div在大div中水平垂直居中方法">
+                <i class="fa fa-chevron-left"></i> 五种小div在大div中水平垂直居中方法
+              </a>
+            
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-31T15:05:12+08:00"
-              content="2016-10-31" >
-          10-31
-        </time>
-      </div>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -302,6 +411,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -321,8 +441,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/own.jpg"
@@ -378,6 +507,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -481,11 +621,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
 
 
   
@@ -503,9 +641,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'content-Amy';
-      var disqus_identifier = 'archives/2016/10/index.html';
-      var disqus_title = "";
-      var disqus_url = '';
+      var disqus_identifier = '2016/11/01/regexp/';
+      var disqus_title = "正则表达式 规则表达式";
+      var disqus_url = 'http://yoursite.com/2016/11/01/regexp/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
@@ -516,6 +654,13 @@
       }
 
       run_disqus_script('count.js');
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
       
     </script>
   
