@@ -98,7 +98,7 @@
 请求模块 var gulp = require(‘gulp’);
 设置导入文件 ##以es6编译成es5为例 gulp.src(‘xx.js’);
 安装babel(es6转es5)在我们需要的本地情况下,局部安装npm install –sav">
-<meta property="og:updated_time" content="2016-11-02T14:30:16.180Z">
+<meta property="og:updated_time" content="2016-11-02T14:34:16.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gulp的配置及使用">
 <meta name="twitter:description" content="gulp 自动化工具安装全局安装 npm install gulp -g
@@ -293,7 +293,7 @@
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
                 <a href="/2016/11/02/gulp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/11/02/gulp/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/02/gulp/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -406,11 +406,8 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view theco
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
+      <div class="ds-thread" data-thread-key="2016/11/02/gulp/"
+           data-title="gulp的配置及使用" data-url="http://yoursite.com/2016/11/02/gulp/">
       </div>
     
   </div>
@@ -628,35 +625,30 @@
 
   
 
-
-
+  
+    
   
 
-    <script type="text/javascript">
-      var disqus_shortname = 'content-amy';
-      var disqus_identifier = '2016/11/02/gulp/';
-      var disqus_title = "gulp的配置及使用";
-      var disqus_url = 'http://yoursite.com/2016/11/02/gulp/';
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"content-amy"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-
-      run_disqus_script('count.js');
-      
-        var disqus_config = function () {
-            this.page.url = disqus_url;
-            this.page.identifier = disqus_identifier;
-            this.page.title = disqus_title;
-        };
-        run_disqus_script('embed.js');
-      
-    </script>
   
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
 
 
 
