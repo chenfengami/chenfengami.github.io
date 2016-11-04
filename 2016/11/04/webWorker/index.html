@@ -84,28 +84,22 @@
 
 
 
-<meta name="description" content="gulp 自动化工具安装全局安装 npm install gulp -g
-局部安装创建依赖、本地安装 npm install gulp –save-dev
-请求模块 var gulp = require(‘gulp’);
-设置导入文件 ##以es6编译成es5为例 gulp.src(‘xx.js’);
-安装babel(es6转es5)在我们需要的本地情况下,局部安装npm install –sav">
+<meta name="description" content="介绍此篇文章摘自 http://blog.csdn.net/dojotoolkit/article/details/25030289
+通过使用Web Worker， 我们可以在浏览器后台运行JavaScript， 而不占用浏览器自身线程。Web Worker可以提高应用的总体性能，并且提升用户体验。
+Web Worker 可以让你在后台运行Javascript一般来说Javascript和页面的U">
 <meta property="og:type" content="article">
-<meta property="og:title" content="gulp的配置及使用">
-<meta property="og:url" content="http://yoursite.com/2016/11/02/gulp/index.html">
+<meta property="og:title" content="多线程Worker对象">
+<meta property="og:url" content="http://yoursite.com/2016/11/04/webWorker/index.html">
 <meta property="og:site_name" content="小太阳">
-<meta property="og:description" content="gulp 自动化工具安装全局安装 npm install gulp -g
-局部安装创建依赖、本地安装 npm install gulp –save-dev
-请求模块 var gulp = require(‘gulp’);
-设置导入文件 ##以es6编译成es5为例 gulp.src(‘xx.js’);
-安装babel(es6转es5)在我们需要的本地情况下,局部安装npm install –sav">
-<meta property="og:updated_time" content="2016-11-02T14:34:16.566Z">
+<meta property="og:description" content="介绍此篇文章摘自 http://blog.csdn.net/dojotoolkit/article/details/25030289
+通过使用Web Worker， 我们可以在浏览器后台运行JavaScript， 而不占用浏览器自身线程。Web Worker可以提高应用的总体性能，并且提升用户体验。
+Web Worker 可以让你在后台运行Javascript一般来说Javascript和页面的U">
+<meta property="og:updated_time" content="2016-11-04T12:15:22.512Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gulp的配置及使用">
-<meta name="twitter:description" content="gulp 自动化工具安装全局安装 npm install gulp -g
-局部安装创建依赖、本地安装 npm install gulp –save-dev
-请求模块 var gulp = require(‘gulp’);
-设置导入文件 ##以es6编译成es5为例 gulp.src(‘xx.js’);
-安装babel(es6转es5)在我们需要的本地情况下,局部安装npm install –sav">
+<meta name="twitter:title" content="多线程Worker对象">
+<meta name="twitter:description" content="介绍此篇文章摘自 http://blog.csdn.net/dojotoolkit/article/details/25030289
+通过使用Web Worker， 我们可以在浏览器后台运行JavaScript， 而不占用浏览器自身线程。Web Worker可以提高应用的总体性能，并且提升用户体验。
+Web Worker 可以让你在后台运行Javascript一般来说Javascript和页面的U">
 
 
 
@@ -126,10 +120,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/02/gulp/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/04/webWorker/"/>
 
 
-  <title> gulp的配置及使用 | 小太阳 </title>
+  <title> 多线程Worker对象 | 小太阳 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -269,7 +263,7 @@
             
             
               
-                gulp的配置及使用
+                多线程Worker对象
               
             
           </h1>
@@ -281,8 +275,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-02T21:53:34+08:00" content="2016-11-02">
-              2016-11-02
+            <time itemprop="dateCreated" datetime="2016-11-04T19:55:22+08:00" content="2016-11-04">
+              2016-11-04
             </time>
           </span>
 
@@ -292,8 +286,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/02/gulp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/02/gulp/" itemprop="commentsCount"></span>
+                <a href="/2016/11/04/webWorker/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/04/webWorker/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -301,7 +295,7 @@
 
           
            
-                   <span id="/2016/11/02/gulp/"class="leancloud_visitors"  data-flag-title="gulp的配置及使用">
+                   <span id="/2016/11/04/webWorker/"class="leancloud_visitors"  data-flag-title="多线程Worker对象">
                         |   阅读次数
                       </span>
                 
@@ -319,18 +313,61 @@
       
 
       
-        <h1 id="gulp-自动化工具"><a href="#gulp-自动化工具" class="headerlink" title="gulp 自动化工具"></a>gulp 自动化工具</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="全局安装"><a href="#全局安装" class="headerlink" title="全局安装"></a>全局安装</h3><p> npm install gulp -g</p>
-<h3 id="局部安装创建依赖、本地安装"><a href="#局部安装创建依赖、本地安装" class="headerlink" title="局部安装创建依赖、本地安装"></a>局部安装创建依赖、本地安装</h3><p> npm install gulp –save-dev</p>
-<h1 id="请求模块"><a href="#请求模块" class="headerlink" title="请求模块"></a>请求模块</h1><p> var gulp = require(‘gulp’);</p>
-<h1 id="设置导入文件"><a href="#设置导入文件" class="headerlink" title="设置导入文件"></a>设置导入文件</h1><p> ##以es6编译成es5为例<br> gulp.src(‘xx.js’);</p>
-<h2 id="安装babel-es6转es5"><a href="#安装babel-es6转es5" class="headerlink" title="安装babel(es6转es5)"></a>安装babel(es6转es5)</h2><p>在我们需要的本地情况下,局部安装<br>npm install –save-dev babel-preset-es2015</p>
-<h1 id="设置管道流-流向babel"><a href="#设置管道流-流向babel" class="headerlink" title="设置管道流 流向babel"></a>设置管道流 流向babel</h1><p>例子:<br>将es6编译成es5<br>     .pipe(babel({<br>          //es2015即es6格式<br>          presets: [‘es2015’]<br>     }))</p>
-<pre><code>//将编译好的文件流向dist文件夹
-.pipe(gulp.dest(&apos;dist&apos;))
-</code></pre><p>例子:<br>合并文件<br>本地安装 npm install gulp-concat –save-dev<br>    const gulp = require(‘gulp’);<br>    const concat = require(‘gulp-concat’);<br>    gulp.task(‘scripts’,function(){<br>            gulp.src(js/<em>.js)<br>            //将js文件夹下的所有js文件合并,”</em>“代表所有<br>            .pipe(concat(‘common.js’))<br>            //合并到common.js文件里<br>            .pipe(gulp.dest(dist));<br>            //把生成的common.js文件存放到dist里<br>        })</p>
-<pre><code>gulp.task(&apos;default&apos;,[&apos;scripts&apos;]);
-       //default入口,执行&apos;scripts&apos;事件(个人理解)
-</code></pre><p>—-压缩js、css、image以此为例</p>
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>此篇文章摘自 <a href="http://blog.csdn.net/dojotoolkit/article/details/25030289" target="_blank" rel="external">http://blog.csdn.net/dojotoolkit/article/details/25030289</a></p>
+<p>通过使用Web Worker， 我们可以在浏览器后台运行JavaScript， 而不占用浏览器自身线程。Web Worker可以提高应用的总体性能，并且提升用户体验。</p>
+<h1 id="Web-Worker-可以让你在后台运行Javascript"><a href="#Web-Worker-可以让你在后台运行Javascript" class="headerlink" title="Web Worker 可以让你在后台运行Javascript"></a>Web Worker 可以让你在后台运行Javascript</h1><p>一般来说Javascript和页面的UI会共用一个线程，所以当点击一个按钮开始运行Javascript后，在这段代码运行完毕之前，页面是无法响应用户操作的，换句话来说就是被“冻结”了。而这段代码可以交给Web Worker在后台运行，那么页面在Javascript运行期间依然可以响应用户操作。后台会启动一个worker线程来执行这段代码，用户可以创建多个worker线程。所以你可以在前台做一些小规模分布式计算之类的工作，不过Web Worker有以下一些使用限制：</p>
+<p>Web Worker无法访问DOM节点；<br>Web Worker无法访问全局变量或是全局函数；<br>Web Worker无法调用alert()或者confirm之类的函数；<br>Web Worker无法访问window、document之类的浏览器全局变量；<br>不过Web Worker中的Javascript依然可以使用setTimeout(),setInterval()之类的函数，也可以使用XMLHttpRequest对象来做Ajax通信。</p>
+<h1 id="有两种Web-Worker"><a href="#有两种Web-Worker" class="headerlink" title="有两种Web Worker"></a>有两种Web Worker</h1><p>Web workers可分为两种类型：专用线程dedicated web worker，以及共享线程shared web worker。 Dedicated web worker随当前页面的关闭而结束；这意味着Dedicated web worker只能被创建它的页面访问。与之相对应的Shared web worker可以被多个页面访问。在Javascript代码中，“Work”类型代表Dedicated web worker，而“SharedWorker”类型代表Shared web worker。</p>
+<p>在绝大多数情况下，使用Dedicated web worker就足够了，因为一般来说在web worker中运行的代码是专为当前页面服务的。而在一些特定情况下，web worker可能运行的是更为普遍性的代码，可以为多个页面服务。在这种情况下，我们会创建一个共享线程的Shared web worker，它可以被与之相关联的多个页面访问，只有当所有关联的的页面都关闭的时候，该Shared web worker才会结束。相对Dedicated web worker，shared web worker稍微复杂些。</p>
+<h1 id="“Worker”对象代表Dedicated-Web-Worker"><a href="#“Worker”对象代表Dedicated-Web-Worker" class="headerlink" title="“Worker”对象代表Dedicated Web Worker"></a>“Worker”对象代表Dedicated Web Worker</h1><pre><code>addEventListener(&quot;message&quot;, function(evt){  
+var date = new Date();  
+var currentDate = null;  
+do {  
+currentDate = new Date();  
+}while(currentDate - date &lt; evt.data);  
+postMessage(currentDate);  
+}, false); 
+以上代码表示lengthytask.js代码
+
+$(document).ready(function(){  
+if(!Modernizr.webworker){  
+alert(&quot;This browser doesn&apos;t support Web Worker!&quot;);  
+return;  
+}  
+$(&quot;#btnStart&quot;).click(function(){  
+var worker = new Worker(&quot;script/lengthytask.js&quot;);  
+worker.addEventListener(&quot;message&quot;, function(evt){  
+alert(evt.data);  
+}, false);  
+worker.postMessage(10000)  
+});  
+}); 
+</code></pre><p>以上代码在后台监听message时间，并获取页面传来的参数：10000；这里实际上是一个计时函数：在message事件被触发10000毫秒之后，把结果（currentDate）传给页面。<br>所以当点击“Start Processing”按钮，页面会在10秒钟后把当时的时刻alert出来。在这10秒钟内页面依然可以响应鼠标键盘事件。</p>
+<h1 id="“SharedWorker”对象代表Shared-Web-Worker"><a href="#“SharedWorker”对象代表Shared-Web-Worker" class="headerlink" title="“SharedWorker”对象代表Shared Web Worker"></a>“SharedWorker”对象代表Shared Web Worker</h1><p>前面的代码使用的是dedicated web worker。 这一节会用shared web worker代替dedicated web worker，来区别两者的不同。下面是同一个例子的shared web worker版本：</p>
+<pre><code>addEventListener(&quot;message&quot;, function(evt){  
+var date = new Date();  
+var currentDate = null;  
+do {  
+currentDate = new Date();  
+}while(currentDate - date &lt; evt.data);  
+postMessage(currentDate);  
+}, false);  
+</code></pre><p>这里创建了一个SharedWorker对象，并把message事件绑定在shared worker的port对象上；同样由port对象发起postMessage， 开始执行后台代码sharedlengthytask.js</p>
+<p>以下是sharedlengthytask.js<br>    var port;<br>    addEventListener(“connect”, function(evt){<br>    port = evt.ports[0];<br>    port.addEventListener(“message”, function(evt){<br>    var date = new Date();<br>    var currentDate = null;<br>    do {<br>    currentDate = new Date();<br>    }while(currentDate - date &lt; evt.data);<br>    port.postMessage(currentDate);<br>    }, false);<br>    port.start();<br>    }, false);     </p>
+<p>使用SharedWorker对象的后台代码需要绑定connect和message事件， connect事件会在页面上的port被start时触发。之后的message事件的回调函数与之前的基本相同，最后port调用postMessage方法把结果传回给页面。</p>
+<h1 id="Web-Worker使用XMLHttpRequest与服务端通信"><a href="#Web-Worker使用XMLHttpRequest与服务端通信" class="headerlink" title="Web Worker使用XMLHttpRequest与服务端通信"></a>Web Worker使用XMLHttpRequest与服务端通信</h1><pre><code>addEventListener(&quot;message&quot;, function(evt){  
+var xhr = new XMLHttpRequest();  
+xhr.open(&quot;GET&quot;, &quot;lengthytaskhandler.ashx&quot;);  
+xhr.onload = function(){  
+postMessage(xhr.responseText);  
+};  
+xhr.send();  
+},false);  
+</code></pre><h1 id="通过Error事件捕捉错误信息"><a href="#通过Error事件捕捉错误信息" class="headerlink" title="通过Error事件捕捉错误信息"></a>通过Error事件捕捉错误信息</h1><p>当我们把越来越复杂的逻辑加到Web Worker里时，错误处理机制是必不可少的。而Web Worker恰恰提供了error事件，供开发者捕捉错误信息。下面的代码展示了如何绑定error事件：</p>
+<p>$(“#btnStart”).click(function(){<br>var worker = new Worker(“scripts/lengthytask.js”);<br>worker.addEventListener(“error”, function(evt){<br>alert(“Line #” + evt.lineno + “ - “ + evt.message + “ in “ + evt.filename);<br>}, false);<br>worker.postMessage(10000);<br>});</p>
+<p>如上可见， Worker对象可以绑定error事件；而且evt对象中包含错误所在的代码文件（evt.filename）、错误所在的代码行数（evt.lineno）、以及错误信息（evt.message）。</p>
+<h1 id="通过terminate-方法终止Web-Worker"><a href="#通过terminate-方法终止Web-Worker" class="headerlink" title="通过terminate()方法终止Web Worker"></a>通过terminate()方法终止Web Worker</h1><p>有些情况下，我们可能需要强制终止执行中的Web Worker。Worker对象提供了terminate()来终止自身执行任务，被终止的Worker对象不能被重启或重用，我们只能新建另一个Worker实例来执行新的任务。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>Web Worker可以在后台执行脚本，而不会阻塞页面交互。Worker对象分为两种：专用式Web Worker和共享式Web Worker：专用式的Web Worker只能被当个页面使用，而共享式的Web Worker可以在被多个页面使用。另外，本文还介绍了Web Worker的错误处理机制，以及使用Ajax与服务端交互。</p>
 
       
     </div>
@@ -377,17 +414,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/01/regexp/" rel="next" title="正则表达式 规则表达式">
-                <i class="fa fa-chevron-left"></i> 正则表达式 规则表达式
+              <a href="/2016/11/02/gulp/" rel="next" title="gulp的配置及使用">
+                <i class="fa fa-chevron-left"></i> gulp的配置及使用
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/04/webWorker/" rel="prev" title="多线程Worker对象">
-                多线程Worker对象 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -413,8 +446,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/02/gulp/"
-           data-title="gulp的配置及使用" data-url="http://yoursite.com/2016/11/02/gulp/">
+      <div class="ds-thread" data-thread-key="2016/11/04/webWorker/"
+           data-title="多线程Worker对象" data-url="http://yoursite.com/2016/11/04/webWorker/">
       </div>
     
   </div>
@@ -511,7 +544,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#gulp-自动化工具"><span class="nav-number">1.</span> <span class="nav-text">gulp 自动化工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全局安装"><span class="nav-number">1.1.1.</span> <span class="nav-text">全局安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#局部安装创建依赖、本地安装"><span class="nav-number">1.1.2.</span> <span class="nav-text">局部安装创建依赖、本地安装</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#请求模块"><span class="nav-number">2.</span> <span class="nav-text">请求模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置导入文件"><span class="nav-number">3.</span> <span class="nav-text">设置导入文件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装babel-es6转es5"><span class="nav-number">3.1.</span> <span class="nav-text">安装babel(es6转es5)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置管道流-流向babel"><span class="nav-number">4.</span> <span class="nav-text">设置管道流 流向babel</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web-Worker-可以让你在后台运行Javascript"><span class="nav-number">2.</span> <span class="nav-text">Web Worker 可以让你在后台运行Javascript</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#有两种Web-Worker"><span class="nav-number">3.</span> <span class="nav-text">有两种Web Worker</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#“Worker”对象代表Dedicated-Web-Worker"><span class="nav-number">4.</span> <span class="nav-text">“Worker”对象代表Dedicated Web Worker</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#“SharedWorker”对象代表Shared-Web-Worker"><span class="nav-number">5.</span> <span class="nav-text">“SharedWorker”对象代表Shared Web Worker</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web-Worker使用XMLHttpRequest与服务端通信"><span class="nav-number">6.</span> <span class="nav-text">Web Worker使用XMLHttpRequest与服务端通信</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#通过Error事件捕捉错误信息"><span class="nav-number">7.</span> <span class="nav-text">通过Error事件捕捉错误信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#通过terminate-方法终止Web-Worker"><span class="nav-number">8.</span> <span class="nav-text">通过terminate()方法终止Web Worker</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">9.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
           </div>
         </section>
