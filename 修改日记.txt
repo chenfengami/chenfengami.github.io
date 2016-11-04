@@ -1,0 +1,3 @@
+2016.11.3 21:04
+将该目录下的vendors修改为lib
+并且将主题配置文件_config_yml的_internal: 由vendors修改为lib
