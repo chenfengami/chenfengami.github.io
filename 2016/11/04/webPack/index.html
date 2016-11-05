@@ -84,28 +84,16 @@
 
 
 
-<meta name="description" content="gulp 自动化工具安装全局安装 npm install gulp -g
-局部安装创建依赖、本地安装 npm install gulp –save-dev
-请求模块 var gulp = require(‘gulp’);
-设置导入文件 ##以es6编译成es5为例 gulp.src(‘xx.js’);
-安装babel(es6转es5)在我们需要的本地情况下,局部安装npm install –sav">
+<meta name="description" content="介绍webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们后">
 <meta property="og:type" content="article">
-<meta property="og:title" content="gulp的配置及使用">
-<meta property="og:url" content="http://yoursite.com/2016/11/02/gulp/index.html">
+<meta property="og:title" content="webPack">
+<meta property="og:url" content="http://yoursite.com/2016/11/04/webPack/index.html">
 <meta property="og:site_name" content="小太阳">
-<meta property="og:description" content="gulp 自动化工具安装全局安装 npm install gulp -g
-局部安装创建依赖、本地安装 npm install gulp –save-dev
-请求模块 var gulp = require(‘gulp’);
-设置导入文件 ##以es6编译成es5为例 gulp.src(‘xx.js’);
-安装babel(es6转es5)在我们需要的本地情况下,局部安装npm install –sav">
-<meta property="og:updated_time" content="2016-11-02T14:34:16.566Z">
+<meta property="og:description" content="介绍webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们后">
+<meta property="og:updated_time" content="2016-11-05T03:25:17.396Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gulp的配置及使用">
-<meta name="twitter:description" content="gulp 自动化工具安装全局安装 npm install gulp -g
-局部安装创建依赖、本地安装 npm install gulp –save-dev
-请求模块 var gulp = require(‘gulp’);
-设置导入文件 ##以es6编译成es5为例 gulp.src(‘xx.js’);
-安装babel(es6转es5)在我们需要的本地情况下,局部安装npm install –sav">
+<meta name="twitter:title" content="webPack">
+<meta name="twitter:description" content="介绍webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们后">
 
 
 
@@ -126,10 +114,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/02/gulp/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/04/webPack/"/>
 
 
-  <title> gulp的配置及使用 | 小太阳 </title>
+  <title> webPack | 小太阳 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -269,7 +257,7 @@
             
             
               
-                gulp的配置及使用
+                webPack
               
             
           </h1>
@@ -281,8 +269,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-02T21:53:34+08:00" content="2016-11-02">
-              2016-11-02
+            <time itemprop="dateCreated" datetime="2016-11-04T22:19:56+08:00" content="2016-11-04">
+              2016-11-04
             </time>
           </span>
 
@@ -292,8 +280,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/02/gulp/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/02/gulp/" itemprop="commentsCount"></span>
+                <a href="/2016/11/04/webPack/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/04/webPack/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -301,7 +289,7 @@
 
           
            
-                   <span id="/2016/11/02/gulp/"class="leancloud_visitors"  data-flag-title="gulp的配置及使用">
+                   <span id="/2016/11/04/webPack/"class="leancloud_visitors"  data-flag-title="webPack">
                         |   阅读次数
                       </span>
                 
@@ -319,18 +307,14 @@
       
 
       
-        <h1 id="gulp-自动化工具"><a href="#gulp-自动化工具" class="headerlink" title="gulp 自动化工具"></a>gulp 自动化工具</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="全局安装"><a href="#全局安装" class="headerlink" title="全局安装"></a>全局安装</h3><p> npm install gulp -g</p>
-<h3 id="局部安装创建依赖、本地安装"><a href="#局部安装创建依赖、本地安装" class="headerlink" title="局部安装创建依赖、本地安装"></a>局部安装创建依赖、本地安装</h3><p> npm install gulp –save-dev</p>
-<h1 id="请求模块"><a href="#请求模块" class="headerlink" title="请求模块"></a>请求模块</h1><p> var gulp = require(‘gulp’);</p>
-<h1 id="设置导入文件"><a href="#设置导入文件" class="headerlink" title="设置导入文件"></a>设置导入文件</h1><p> ##以es6编译成es5为例<br> gulp.src(‘xx.js’);</p>
-<h2 id="安装babel-es6转es5"><a href="#安装babel-es6转es5" class="headerlink" title="安装babel(es6转es5)"></a>安装babel(es6转es5)</h2><p>在我们需要的本地情况下,局部安装<br>npm install –save-dev babel-preset-es2015</p>
-<h1 id="设置管道流-流向babel"><a href="#设置管道流-流向babel" class="headerlink" title="设置管道流 流向babel"></a>设置管道流 流向babel</h1><p>例子:<br>将es6编译成es5<br>     .pipe(babel({<br>          //es2015即es6格式<br>          presets: [‘es2015’]<br>     }))</p>
-<pre><code>//将编译好的文件流向dist文件夹
-.pipe(gulp.dest(&apos;dist&apos;))
-</code></pre><p>例子:<br>合并文件<br>本地安装 npm install gulp-concat –save-dev<br>    const gulp = require(‘gulp’);<br>    const concat = require(‘gulp-concat’);<br>    gulp.task(‘scripts’,function(){<br>            gulp.src(js/<em>.js)<br>            //将js文件夹下的所有js文件合并,”</em>“代表所有<br>            .pipe(concat(‘common.js’))<br>            //合并到common.js文件里<br>            .pipe(gulp.dest(dist));<br>            //把生成的common.js文件存放到dist里<br>        })</p>
-<pre><code>gulp.task(&apos;default&apos;,[&apos;scripts&apos;]);
-       //default入口,执行&apos;scripts&apos;事件(个人理解)
-</code></pre><p>—-压缩js、css、image以此为例</p>
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。<br>我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们后续会提到。<br>你可以不打算将其用在你的项目上，但没有理由不去掌握它，因为以近期 Github 上各大主流的（React相关）项目来说，它们仓库上所展示的示例已经是基于 webpack 来开发的，比如 React-Boostrap 和 Redux。<br>webpack的官网是 <a href="http://webpack.github.io/" target="_blank" rel="external">http://webpack.github.io/</a> ，文档地址是 <a href="http://webpack.github.io/docs/" target="_blank" rel="external">http://webpack.github.io/docs/</a> ，想对其进行更详细了解的可以点进去瞧一瞧。</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="全局安装"><a href="#全局安装" class="headerlink" title="全局安装"></a>全局安装</h2><p>npm install webpack -g</p>
+<p>##局部安装依赖</p>
+<p>npm init</p>
+<p>npm install webpack –sadv-dev</p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>每个项目下必须配置有一个 webpack.config.js,它的作用如同gulpfile.js/Gruntfile.js,就是一个配置项，告诉webpack它需要做什么。</p>
+<p>局部安装模块<br>cnpm install sass-loader -D<br>cnpm install css-loader -D<br>cnpm install style-loader -D<br>cnpm install url-loader -D<br>…<br>例子:<br>     var webpack = require(‘webpack’); //请求加载webpack模块<br>     module.exports = {<br>       //页面入口位置<br>       entry : {<br>          index : ‘./xxx’ // ./当前目录下的xxx文件<br>          //支持数组形式，将加载数组中的所有模块，但以最后一个模块进行输出<br>          //index[‘./xxx1’,’./xxx2’]<br>       },<br>       //入口文件输出配置<br>       output : {<br>          path : ‘./xxx’,   //设置输出文件路径<br>          filename : ‘boundle.js’ //设置输出的文件名称(css、scss、所有压缩打包输出的文件)<br>       },<br>       module : {<br>             //加载器配置<br>             loaders : [<br>                   //.scss 文件使用 style-loader 和 css-loader 和 sass-loader 来编译处理<br>                   { test : /.scss$/, loader: ‘style-loader!css-loader!sass-loader’}, //其中-loader可以省略<br>                   //.js 文件使用 jsx-loader 来编译处理<br>                   { test : /.js$/, loader: ‘jsx-loader’},<br>                   //.css 文件使用 style-loader 和 css-loader 来编译处理<br>                   { test : /.css$/, loader: ‘style-loader!css-loader’},<br>                   //图片文件使用 url-loader 来编译处理,小于8kb的直接转为base64<br>                   { test : /.(png|jpg)$/, loader : ‘url-loader’}<br>             ]<br>       }<br> }</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>最后直接引用输出的文件 ./xxx/boundle.js即可</p>
 
       
     </div>
@@ -377,17 +361,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/01/regexp/" rel="next" title="正则表达式 规则表达式">
-                <i class="fa fa-chevron-left"></i> 正则表达式 规则表达式
+              <a href="/2016/11/04/webSocket/" rel="next" title="webSocket">
+                <i class="fa fa-chevron-left"></i> webSocket
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/04/webWorker/" rel="prev" title="多线程Worker对象">
-                多线程Worker对象 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -413,8 +393,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/02/gulp/"
-           data-title="gulp的配置及使用" data-url="http://yoursite.com/2016/11/02/gulp/">
+      <div class="ds-thread" data-thread-key="2016/11/04/webPack/"
+           data-title="webPack" data-url="http://yoursite.com/2016/11/04/webPack/">
       </div>
     
   </div>
@@ -511,7 +491,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#gulp-自动化工具"><span class="nav-number">1.</span> <span class="nav-text">gulp 自动化工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全局安装"><span class="nav-number">1.1.1.</span> <span class="nav-text">全局安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#局部安装创建依赖、本地安装"><span class="nav-number">1.1.2.</span> <span class="nav-text">局部安装创建依赖、本地安装</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#请求模块"><span class="nav-number">2.</span> <span class="nav-text">请求模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置导入文件"><span class="nav-number">3.</span> <span class="nav-text">设置导入文件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装babel-es6转es5"><span class="nav-number">3.1.</span> <span class="nav-text">安装babel(es6转es5)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置管道流-流向babel"><span class="nav-number">4.</span> <span class="nav-text">设置管道流 流向babel</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#全局安装"><span class="nav-number">2.1.</span> <span class="nav-text">全局安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置"><span class="nav-number">3.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">4.</span> <span class="nav-text">引用</span></a></li></ol></div>
             
           </div>
         </section>
