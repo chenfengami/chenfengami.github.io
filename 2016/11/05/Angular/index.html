@@ -1,0 +1,886 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/sun_favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="介绍AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
+使用使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)
+M层创建数据绑定  var app">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Angular">
+<meta property="og:url" content="http://yoursite.com/2016/11/05/Angular/index.html">
+<meta property="og:site_name" content="小太阳">
+<meta property="og:description" content="介绍AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
+使用使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)
+M层创建数据绑定  var app">
+<meta property="og:updated_time" content="2016-11-05T12:37:12.494Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Angular">
+<meta name="twitter:description" content="介绍AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
+使用使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)
+M层创建数据绑定  var app">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6347927311345518000',
+      author: 'Amy'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/05/Angular/"/>
+
+
+  <title> Angular | 小太阳 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">小太阳</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Angular
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-05T11:40:19+08:00" content="2016-11-05">
+              2016-11-05
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/05/Angular/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/05/Angular/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+           
+                   <span id="/2016/11/05/Angular/"class="leancloud_visitors"  data-flag-title="Angular">
+                        |   阅读次数
+                      </span>
+                
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)</p>
+<h1 id="M层"><a href="#M层" class="headerlink" title="M层"></a>M层</h1><h2 id="创建数据绑定"><a href="#创建数据绑定" class="headerlink" title="创建数据绑定"></a>创建数据绑定</h2><p>  var app = angular.module(‘myApp’,[]);</p>
+<h2 id="作用域注入-局部作用域"><a href="#作用域注入-局部作用域" class="headerlink" title="作用域注入(局部作用域)"></a>作用域注入(局部作用域)</h2><p>  //$scope代表局部作用域、$rootScope代表全局作用域<br>  app.controller(‘myController’,[‘$scope’,’$rootScope’,function($scope,$rootScope){<br>        $scope.name = ‘仰光’;<br>        $rootScope.age = ‘22’;<br>  }])</p>
+<h1 id="V层"><a href="#V层" class="headerlink" title="V层"></a>V层</h1>  <div ng-app="myApp" ng-controller="myController"><br>      //使用局部值name<br>  </div><br>  <p></p> //使用全局age 不用注入作用域 ng-controller<br><br># 监听<br>  $scope.watch(‘$scope.eventName’,function(newVal,oldVal){<br>               $scope.xx = newVal &gt; 200 ? 0 : 20;<br>  })<br>  //事件监听 watch(‘事件名’,callBackFn) 缺点:实时监听，浪费性能;<br><br># $timeout、$interval<br>  由于angular中并不支持setTimeout和setInterval 因此被这两个替代<br>## 用法<br>  app.controller(‘myController’,[‘$scope’,’$timeout’,’$interval’,function(){<br>            $timeout(function(){<br>                  console.log(‘This is a setTimeout’);<br>            },1000)<br><br>            $interval(function(){<br>                  console.log(‘This is a setInterval’);<br>            },1000)<br>  }])<br><br># 循环<br>  app.controller(‘myController’,function($scope){<br>                #scope.dataList = {<br>                    ‘namae’ : ‘仰光’,<br>                    ‘age’ : ‘22’,<br>                    ‘sex’ : ‘man’<br>                }<br> })<br>   <ul ng-controller="myController"><br>       <li ng-repeat="data in dataList"></li><li><br>   </li></ul><br><br># http<br>  $http.get(‘app.json’).success(function(data){<br>       $scope.list = data;<br>  })<br><br># 绑定事件<br>  <div ng-click="evenFn()"><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)</p>
+<h1 id="M层"><a href="#M层" class="headerlink" title="M层"></a>M层</h1><h2 id="创建数据绑定"><a href="#创建数据绑定" class="headerlink" title="创建数据绑定"></a>创建数据绑定</h2><p>  var app = angular.module(‘myApp’,[]);</p>
+<h2 id="作用域注入-局部作用域"><a href="#作用域注入-局部作用域" class="headerlink" title="作用域注入(局部作用域)"></a>作用域注入(局部作用域)</h2><p>  //$scope代表局部作用域、$rootScope代表全局作用域<br>  app.controller(‘myController’,[‘$scope’,’$rootScope’,function($scope,$rootScope){<br>        $scope.name = ‘仰光’;<br>        $rootScope.age = ‘22’;<br>  }])</p>
+<h1 id="V层"><a href="#V层" class="headerlink" title="V层"></a>V层</h1>  <div ng-app="myApp" ng-controller="myController"><br>    {{name}}  //使用局部值name<br>  </div><br>  <p>{{age}}</p> //使用全局age 不用注入作用域 ng-controller<br><br># 监听<br>  $scope.watch(‘$scope.eventName’,function(newVal,oldVal){<br>               $scope.xx = newVal &gt; 200 ? 0 : 20;<br>  })<br>  //事件监听 watch(‘事件名’,callBackFn) 缺点:实时监听，浪费性能;<br><br># $timeout、$interval<br>  由于angular中并不支持setTimeout和setInterval 因此被这两个替代<br>## 用法<br>  app.controller(‘myController’,[‘$scope’,’$timeout’,’$interval’,function(){<br>            $timeout(function(){<br>                  console.log(‘This is a setTimeout’);<br>            },1000)<br><br>            $interval(function(){<br>                  console.log(‘This is a setInterval’);<br>            },1000)<br>  }])<br><br># 循环<br>  app.controller(‘myController’,function($scope){<br>                #scope.dataList = {<br>                    ‘namae’ : ‘仰光’,<br>                    ‘age’ : ‘22’,<br>                    ‘sex’ : ‘man’<br>                }<br> })<br>   <ul ng-controller="myController"><br>       <li ng-repeat="data in dataList">{{data}}</li><li><br>   </li></ul><br><br># http<br>  $http.get(‘app.json’).success(function(data){<br>       $scope.list = data;<br>  })<br><br># 绑定事件<br>  <div ng-click="evenFn()">{{content}}</div><br>  app.controller(‘$scope’,function($scope){<br>      $scope.evenFn = function(){<br>           console.log(‘This is a click event’);<br>      }<br>  })<br><br># 手动初始化、绑定两个module<br>  var m1 = angular.module(‘myApp1’,[]);<br>  var m2 = angular.module(‘myApp2’,[]);<br>  var div = document.getElementsByTagName(‘div’);<br><br>  初始化:<br>         document.onclick = function(){<br>             angular.bootstrap(div[0],[‘myApp1’]);<br>             angular.bootstrap(div[1],[‘myApp2’]);<br>         }<br><br># 路由 route<br>## 注意 引入的angular.js的版本要不小于angular.route.js的版本<br>### 单页应用spa<br><br>  <div id="box" ng-controller="myController"><br>        <a href="#/page1">首页</a><br>        <a href="#/page2">内容1</a><br>        <a href="#/page3">内容2</a><br>  </div><br>  <div ng-view=""></div>
+
+<p>  var app = angular.module(‘myAapp’,[‘ngRoute’]);<br>  app.controller(‘$scope’,function($scope){})</p>
+<h3 id="路由的设置"><a href="#路由的设置" class="headerlink" title="路由的设置"></a>路由的设置</h3>  <div id="box"><br>        <a href="#/page1">首页</a><br>        <a href="#/page2">内容1</a><br>        <a href="#/page3">内容2</a><br>  </div><br>  <div ng-view=""></div>
+
+<p>  app.config([‘$routeProvider’,function($routeProvider){<br>       $routeProvider<br>         .when(‘/page1’,{             //当(when)我们点击page1时 模板内容显示<br>             ‘template’ : ‘</p><p>This is a index page</p>{{name}}‘,<br>             ‘controller’ : ‘myController1’   //为每一个路由页面都绑定一个自己的作用域controller<br>         });<br>         .when(‘/page2’,{<br>             ‘template’ : ‘<p>This is a content page 1</p>‘,<br>             ‘controller’ : ‘myController2’<br>         });<br>         .when(‘/page3’,{<br>             ‘templage’ : ‘<p>This is a content page 2</p>‘,<br>             ‘controller’ : ‘myController3’<br>         });<br>         .otherwise({redirectTo : ‘/page1’})  //页面加载进来时 显示/page1的内容<br>  }])<p></p>
+<h3 id="路由分别注入作用域-控制器的配置"><a href="#路由分别注入作用域-控制器的配置" class="headerlink" title="路由分别注入作用域 控制器的配置"></a>路由分别注入作用域 控制器的配置</h3><pre><code>              app.controller(&apos;myController1&apos;,function($scope){
+               $scope.name=&quot;name1&quot;
+})
+            app.controller(&apos;myController2&apos;,function($scope){
+               $scope.name=&quot;name2&quot;
+
+})
+            app.controller(&apos;myController3&apos;,function($scope){
+               $scope.name=&quot;name3&quot;
+
+})
+</code></pre><h1 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h1><h2 id="数值"><a href="#数值" class="headerlink" title="数值"></a>数值</h2><p>   $scope.xx = $filter(‘number’)(数值,小数点保留个数,四舍五入)<br>   $scope.number = $filter(‘number’)(1234.369,2) // 输出的值为1234.37</p>
+<h2 id="货币"><a href="#货币" class="headerlink" title="货币"></a>货币</h2><p>   $filter(‘currency’)(1000,’$’) //$1000<br>   表达式内{name|currency:’$’}</p>
+<h2 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h2><p>   $filter(‘date’)(‘yy/MM/dd’); //小括号后面添加时间格式</p>
+<h2 id="大写、小写过滤器"><a href="#大写、小写过滤器" class="headerlink" title="大写、小写过滤器"></a>大写、小写过滤器</h2><p>   $filter(‘uppercase’)(‘…’) //转换为大写<br>   $filter(‘lowercase’)(‘…’) //转换为小写</p>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>   $filter(‘orderBy’)(collection,expression,reverse,comparator) // true == 降序 == reverse, false == 升序 == !reverse</p>
+<h2 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h2><p>   $filter(‘filter’)(arr,’L’); //将数组中含有L的给过滤出来</p>
+<h2 id="限制过滤器"><a href="#限制过滤器" class="headerlink" title="限制过滤器"></a>限制过滤器</h2><p>   $filter(‘limitTo’)(input,limit,begin)  //可以限制个数 $filter(‘limitTo’)(2);</p>
+<h1 id="自定义过滤器"><a href="#自定义过滤器" class="headerlink" title="自定义过滤器"></a>自定义过滤器</h1><p>自定义以首字母大写为例子</p>
+<p>  app.filter(‘firstUpper’,function(){<br>        return function(str){<br>            return str.charAt(0).toUpperCase() + str.subString(1); //将str中的第一个字母大写拼接字符串中（n-1）后面的字符串<br>        }<br>  })</p>
+<p>调用 $filter(‘firstUpper’)(‘yangguang’); //输出 Yangguang</p>
+<h1 id="样式指令"><a href="#样式指令" class="headerlink" title="样式指令"></a>样式指令</h1>  <h1 ng-style="myObj"><br>     ABC<br>  </h1>
+
+<p>  $scope.myObj = {<br>         ‘background’ : ‘#f00’,<br>         ‘color’ : ‘#ff0’<br>  }</p>
+<p>  <style><br>     .active{color:#000;}<br>  </style><br>  </p><p ng-class="{{myClass}}"></p><p></p>
+<p>  $scope.myClass = {<br>       ‘active’ : ‘true’   // ‘className’ : ‘任意值’<br>  }</p>
+<h1 id="创建自定义格式"><a href="#创建自定义格式" class="headerlink" title="创建自定义格式"></a>创建自定义格式</h1><p>  app.directive(‘cf’,[function(){<br>     return{<br>         restrict : ‘E’,  // E:元素 A:属性 C:类名 M:注释<br>         replace : true,  //是否将自定义格式替换掉<br>         template : ‘</p><h1>替代模板</h1>‘   //替代的模板<br>     }<br>  }]);<p></p>
+<p>  <cf></cf> 标签被替换为</p><h1>替代模板</h1><p></p>
+<h1 id="作用域间的互相通信"><a href="#作用域间的互相通信" class="headerlink" title="作用域间的互相通信"></a>作用域间的互相通信</h1><h2 id="向上通信"><a href="#向上通信" class="headerlink" title="向上通信"></a>向上通信</h2><pre><code>&lt;body ng-app=&quot;myApp&quot;&gt;
+ &lt;div ng-controller=&quot;myCtr&quot;&gt;
+     {{name}}
+     &lt;div ng-controller=&quot;myCtr&quot; ng-click=&quot;fnAdd()&quot;&gt;
+         {{name}}
+         &lt;div ng-controller=&quot;myCtr&quot;&gt;
+             {{name}}
+         &lt;/div&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
+         $scope.fnAdd = function(){
+             $scope.name = $scope.name-1;
+             $scope.$emit(&apos;upper&apos;,$scope.name); //$emit向上通信
+         }
+         $scope.$on(&apos;upper&apos;,function(){
+             $scope.name = $scope.name+1;
+         })
+</code></pre><h2 id="向下通信"><a href="#向下通信" class="headerlink" title="向下通信"></a>向下通信</h2><pre><code>$scope.fnAdd = function(){
+    $scope.name = $scope.name-1;
+    $scoppe.$broadcast(&apos;lower&apos;,$scope.name); //$broadcast向下通信
+}
+$scope.$on(&apos;lower&apos;,function(){
+    $scope.name = $scope.name+1;
+})
+</code></pre><h1 id="脏值、脏数据、脏数据检测"><a href="#脏值、脏数据、脏数据检测" class="headerlink" title="脏值、脏数据、脏数据检测"></a>脏值、脏数据、脏数据检测</h1><h2 id="关键字-watch监听-digest修改"><a href="#关键字-watch监听-digest修改" class="headerlink" title="关键字 $watch监听 $digest修改"></a>关键字 $watch监听 $digest修改</h2><p>$watch之后会把值返回给$digest,$digest会把老值和新值进行比较,如果相同,不修改,不相同则就改,这个过程叫做脏数据处理;</p>
+</div><br>  app.controller(‘$scope’,function($scope){<br>      $scope.evenFn = function(){<br>           console.log(‘This is a click event’);<br>      }<br>  })<br><br># 手动初始化、绑定两个module<br>  var m1 = angular.module(‘myApp1’,[]);<br>  var m2 = angular.module(‘myApp2’,[]);<br>  var div = document.getElementsByTagName(‘div’);<br><br>  初始化:<br>         document.onclick = function(){<br>             angular.bootstrap(div[0],[‘myApp1’]);<br>             angular.bootstrap(div[1],[‘myApp2’]);<br>         }<br><br># 路由 route<br>## 注意 引入的angular.js的版本要不小于angular.route.js的版本<br>### 单页应用spa<br><br>  <div id="box" ng-controller="myController"><br>        <a href="#/page1">首页</a><br>        <a href="#/page2">内容1</a><br>        <a href="#/page3">内容2</a><br>  </div><br>  <div ng-view=""></div>
+
+<p>  var app = angular.module(‘myAapp’,[‘ngRoute’]);<br>  app.controller(‘$scope’,function($scope){})</p>
+<h3 id="路由的设置"><a href="#路由的设置" class="headerlink" title="路由的设置"></a>路由的设置</h3>  <div id="box"><br>        <a href="#/page1">首页</a><br>        <a href="#/page2">内容1</a><br>        <a href="#/page3">内容2</a><br>  </div><br>  <div ng-view=""></div>
+
+<p>  app.config([‘$routeProvider’,function($routeProvider){<br>       $routeProvider<br>         .when(‘/page1’,{             //当(when)我们点击page1时 模板内容显示<br>             ‘template’ : ‘</p><p>This is a index page</p>‘,<br>             ‘controller’ : ‘myController1’   //为每一个路由页面都绑定一个自己的作用域controller<br>         });<br>         .when(‘/page2’,{<br>             ‘template’ : ‘<p>This is a content page 1</p>‘,<br>             ‘controller’ : ‘myController2’<br>         });<br>         .when(‘/page3’,{<br>             ‘templage’ : ‘<p>This is a content page 2</p>‘,<br>             ‘controller’ : ‘myController3’<br>         });<br>         .otherwise({redirectTo : ‘/page1’})  //页面加载进来时 显示/page1的内容<br>  }])<p></p>
+<h3 id="路由分别注入作用域-控制器的配置"><a href="#路由分别注入作用域-控制器的配置" class="headerlink" title="路由分别注入作用域 控制器的配置"></a>路由分别注入作用域 控制器的配置</h3><pre><code>              app.controller(&apos;myController1&apos;,function($scope){
+               $scope.name=&quot;name1&quot;
+})
+            app.controller(&apos;myController2&apos;,function($scope){
+               $scope.name=&quot;name2&quot;
+
+})
+            app.controller(&apos;myController3&apos;,function($scope){
+               $scope.name=&quot;name3&quot;
+
+})
+</code></pre><h1 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h1><h2 id="数值"><a href="#数值" class="headerlink" title="数值"></a>数值</h2><p>   $scope.xx = $filter(‘number’)(数值,小数点保留个数,四舍五入)<br>   $scope.number = $filter(‘number’)(1234.369,2) // 输出的值为1234.37</p>
+<h2 id="货币"><a href="#货币" class="headerlink" title="货币"></a>货币</h2><p>   $filter(‘currency’)(1000,’$’) //$1000<br>   表达式内{name|currency:’$’}</p>
+<h2 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h2><p>   $filter(‘date’)(‘yy/MM/dd’); //小括号后面添加时间格式</p>
+<h2 id="大写、小写过滤器"><a href="#大写、小写过滤器" class="headerlink" title="大写、小写过滤器"></a>大写、小写过滤器</h2><p>   $filter(‘uppercase’)(‘…’) //转换为大写<br>   $filter(‘lowercase’)(‘…’) //转换为小写</p>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>   $filter(‘orderBy’)(collection,expression,reverse,comparator) // true == 降序 == reverse, false == 升序 == !reverse</p>
+<h2 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h2><p>   $filter(‘filter’)(arr,’L’); //将数组中含有L的给过滤出来</p>
+<h2 id="限制过滤器"><a href="#限制过滤器" class="headerlink" title="限制过滤器"></a>限制过滤器</h2><p>   $filter(‘limitTo’)(input,limit,begin)  //可以限制个数 $filter(‘limitTo’)(2);</p>
+<h1 id="自定义过滤器"><a href="#自定义过滤器" class="headerlink" title="自定义过滤器"></a>自定义过滤器</h1><p>自定义以首字母大写为例子</p>
+<p>  app.filter(‘firstUpper’,function(){<br>        return function(str){<br>            return str.charAt(0).toUpperCase() + str.subString(1); //将str中的第一个字母大写拼接字符串中（n-1）后面的字符串<br>        }<br>  })</p>
+<p>调用 $filter(‘firstUpper’)(‘yangguang’); //输出 Yangguang</p>
+<h1 id="样式指令"><a href="#样式指令" class="headerlink" title="样式指令"></a>样式指令</h1>  <h1 ng-style="myObj"><br>     ABC<br>  </h1>
+
+<p>  $scope.myObj = {<br>         ‘background’ : ‘#f00’,<br>         ‘color’ : ‘#ff0’<br>  }</p>
+<p>  <style><br>     .active{color:#000;}<br>  </style><br>  </p><p ng-class=""></p><p></p>
+<p>  $scope.myClass = {<br>       ‘active’ : ‘true’   // ‘className’ : ‘任意值’<br>  }</p>
+<h1 id="创建自定义格式"><a href="#创建自定义格式" class="headerlink" title="创建自定义格式"></a>创建自定义格式</h1><p>  app.directive(‘cf’,[function(){<br>     return{<br>         restrict : ‘E’,  // E:元素 A:属性 C:类名 M:注释<br>         replace : true,  //是否将自定义格式替换掉<br>         template : ‘</p><h1>替代模板</h1>‘   //替代的模板<br>     }<br>  }]);<p></p>
+<p>  <cf></cf> 标签被替换为</p><h1>替代模板</h1><p></p>
+<h1 id="作用域间的互相通信"><a href="#作用域间的互相通信" class="headerlink" title="作用域间的互相通信"></a>作用域间的互相通信</h1><h2 id="向上通信"><a href="#向上通信" class="headerlink" title="向上通信"></a>向上通信</h2><pre><code>&lt;body ng-app=&quot;myApp&quot;&gt;
+ &lt;div ng-controller=&quot;myCtr&quot;&gt;
+     {{name}}
+     &lt;div ng-controller=&quot;myCtr&quot; ng-click=&quot;fnAdd()&quot;&gt;
+         {{name}}
+         &lt;div ng-controller=&quot;myCtr&quot;&gt;
+             {{name}}
+         &lt;/div&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
+         $scope.fnAdd = function(){
+             $scope.name = $scope.name-1;
+             $scope.$emit(&apos;upper&apos;,$scope.name); //$emit向上通信
+         }
+         $scope.$on(&apos;upper&apos;,function(){
+             $scope.name = $scope.name+1;
+         })
+</code></pre><h2 id="向下通信"><a href="#向下通信" class="headerlink" title="向下通信"></a>向下通信</h2><pre><code>$scope.fnAdd = function(){
+    $scope.name = $scope.name-1;
+    $scoppe.$broadcast(&apos;lower&apos;,$scope.name); //$broadcast向下通信
+}
+$scope.$on(&apos;lower&apos;,function(){
+    $scope.name = $scope.name+1;
+})
+</code></pre><h1 id="脏值、脏数据、脏数据检测"><a href="#脏值、脏数据、脏数据检测" class="headerlink" title="脏值、脏数据、脏数据检测"></a>脏值、脏数据、脏数据检测</h1><h2 id="关键字-watch监听-digest修改"><a href="#关键字-watch监听-digest修改" class="headerlink" title="关键字 $watch监听 $digest修改"></a>关键字 $watch监听 $digest修改</h2><p>$watch之后会把值返回给$digest,$digest会把老值和新值进行比较,如果相同,不修改,不相同则就改,这个过程叫做脏数据处理;</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat-reward-image.png" alt="ChaunceyAmy WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay-reward-image.png" alt="ChaunceyAmy Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/04/webPack/" rel="next" title="webPack">
+                <i class="fa fa-chevron-left"></i> webPack
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/05/Angular/"
+           data-title="Angular" data-url="http://yoursite.com/2016/11/05/Angular/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/own.jpg"
+               alt="ChaunceyAmy" />
+          <p class="site-author-name" itemprop="name">ChaunceyAmy</p>
+          <p class="site-description motion-element" itemprop="description">身边有个太阳,何必仰光</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/chenfengami" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/chen-feng-89-44-54" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#M层"><span class="nav-number">3.</span> <span class="nav-text">M层</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数据绑定"><span class="nav-number">3.1.</span> <span class="nav-text">创建数据绑定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域注入-局部作用域"><span class="nav-number">3.2.</span> <span class="nav-text">作用域注入(局部作用域)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#V层"><span class="nav-number">4.</span> <span class="nav-text">V层</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">5.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用"><span class="nav-number">6.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#M层"><span class="nav-number">7.</span> <span class="nav-text">M层</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数据绑定"><span class="nav-number">7.1.</span> <span class="nav-text">创建数据绑定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域注入-局部作用域"><span class="nav-number">7.2.</span> <span class="nav-text">作用域注入(局部作用域)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#V层"><span class="nav-number">8.</span> <span class="nav-text">V层</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#路由的设置"><span class="nav-number">8.0.1.</span> <span class="nav-text">路由的设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路由分别注入作用域-控制器的配置"><span class="nav-number">8.0.2.</span> <span class="nav-text">路由分别注入作用域 控制器的配置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#过滤器"><span class="nav-number">9.</span> <span class="nav-text">过滤器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数值"><span class="nav-number">9.1.</span> <span class="nav-text">数值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#货币"><span class="nav-number">9.2.</span> <span class="nav-text">货币</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时间"><span class="nav-number">9.3.</span> <span class="nav-text">时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大写、小写过滤器"><span class="nav-number">9.4.</span> <span class="nav-text">大写、小写过滤器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#排序"><span class="nav-number">9.5.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过滤"><span class="nav-number">9.6.</span> <span class="nav-text">过滤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#限制过滤器"><span class="nav-number">9.7.</span> <span class="nav-text">限制过滤器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义过滤器"><span class="nav-number">10.</span> <span class="nav-text">自定义过滤器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样式指令"><span class="nav-number">11.</span> <span class="nav-text">样式指令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">12.</span> <span class="nav-text">     ABC  </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建自定义格式"><span class="nav-number">13.</span> <span class="nav-text">创建自定义格式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">14.</span> <span class="nav-text">替代模板</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">15.</span> <span class="nav-text">替代模板</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#作用域间的互相通信"><span class="nav-number">16.</span> <span class="nav-text">作用域间的互相通信</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#向上通信"><span class="nav-number">16.1.</span> <span class="nav-text">向上通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向下通信"><span class="nav-number">16.2.</span> <span class="nav-text">向下通信</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#脏值、脏数据、脏数据检测"><span class="nav-number">17.</span> <span class="nav-text">脏值、脏数据、脏数据检测</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关键字-watch监听-digest修改"><span class="nav-number">17.1.</span> <span class="nav-text">关键字 $watch监听 $digest修改</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#路由的设置"><span class="nav-number">17.1.1.</span> <span class="nav-text">路由的设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路由分别注入作用域-控制器的配置"><span class="nav-number">17.1.2.</span> <span class="nav-text">路由分别注入作用域 控制器的配置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#过滤器"><span class="nav-number">18.</span> <span class="nav-text">过滤器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数值"><span class="nav-number">18.1.</span> <span class="nav-text">数值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#货币"><span class="nav-number">18.2.</span> <span class="nav-text">货币</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时间"><span class="nav-number">18.3.</span> <span class="nav-text">时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大写、小写过滤器"><span class="nav-number">18.4.</span> <span class="nav-text">大写、小写过滤器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#排序"><span class="nav-number">18.5.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过滤"><span class="nav-number">18.6.</span> <span class="nav-text">过滤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#限制过滤器"><span class="nav-number">18.7.</span> <span class="nav-text">限制过滤器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义过滤器"><span class="nav-number">19.</span> <span class="nav-text">自定义过滤器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样式指令"><span class="nav-number">20.</span> <span class="nav-text">样式指令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">21.</span> <span class="nav-text">     ABC  </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建自定义格式"><span class="nav-number">22.</span> <span class="nav-text">创建自定义格式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">23.</span> <span class="nav-text">替代模板</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">24.</span> <span class="nav-text">替代模板</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#作用域间的互相通信"><span class="nav-number">25.</span> <span class="nav-text">作用域间的互相通信</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#向上通信"><span class="nav-number">25.1.</span> <span class="nav-text">向上通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向下通信"><span class="nav-number">25.2.</span> <span class="nav-text">向下通信</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#脏值、脏数据、脏数据检测"><span class="nav-number">26.</span> <span class="nav-text">脏值、脏数据、脏数据检测</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关键字-watch监听-digest修改"><span class="nav-number">26.1.</span> <span class="nav-text">关键字 $watch监听 $digest修改</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ChaunceyAmy</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"content-amy"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("qmo2t7tH6gb3Nij0IwazplwD-gzGzoHsz", "W52FHf7EznsTCcSlQDdJ2awh");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+</body>
+</html>
