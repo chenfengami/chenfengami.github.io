@@ -669,6 +669,7 @@ function showTime(Counter) {
 					var content = '阅读次数' + ' ' + object.get('time');
 					$(document.getElementById(url)).text(content);
 				}
+
 			},
 			error: function(object, error) {
 				console.log("Error: " + error.code + " " + error.message);
@@ -724,11 +725,9 @@ function addCount(Counter) {
 $(function() {
 	var Counter = AV.Object.extend("Counter");
 	if ($('.leancloud_visitors').length == 1) {
-	alert(1)
 		addCount(Counter);
 	} else if ($('.post-title-link').length > 1) {
 		showTime(Counter);
-		alert(2)
 	}
 }); 
 </script>
