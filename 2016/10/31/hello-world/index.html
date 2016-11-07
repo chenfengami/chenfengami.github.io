@@ -967,9 +967,11 @@ function addCount(Counter) {
 $(function() {
 	var Counter = AV.Object.extend("Counter");
 	if ($('.leancloud_visitors').length == 1) {
+	alert(1)
 		addCount(Counter);
 	} else if ($('.post-title-link').length > 1) {
 		showTime(Counter);
+		alert(2)
 	}
 }); 
 </script>
