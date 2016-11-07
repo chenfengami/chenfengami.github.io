@@ -86,20 +86,20 @@
 
 <meta name="description" content="介绍AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
 使用使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)
-M层创建数据绑定  var app">
+M层创建数据绑定var app =">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Angular">
 <meta property="og:url" content="http://yoursite.com/2016/11/05/Angular/index.html">
 <meta property="og:site_name" content="小太阳">
 <meta property="og:description" content="介绍AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
 使用使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)
-M层创建数据绑定  var app">
-<meta property="og:updated_time" content="2016-11-05T13:29:47.469Z">
+M层创建数据绑定var app =">
+<meta property="og:updated_time" content="2016-11-07T00:43:51.593Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Angular">
 <meta name="twitter:description" content="介绍AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
 使用使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)
-M层创建数据绑定  var app">
+M层创建数据绑定var app =">
 
 
 
@@ -315,9 +315,13 @@ M层创建数据绑定  var app">
       
         <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。</p>
 <h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)</p>
-<h1 id="M层"><a href="#M层" class="headerlink" title="M层"></a>M层</h1><h2 id="创建数据绑定"><a href="#创建数据绑定" class="headerlink" title="创建数据绑定"></a>创建数据绑定</h2><p>  var app = angular.module(‘myApp’,[]);</p>
-<h2 id="作用域注入-局部作用域"><a href="#作用域注入-局部作用域" class="headerlink" title="作用域注入(局部作用域)"></a>作用域注入(局部作用域)</h2><p>  //$scope代表局部作用域、$rootScope代表全局作用域<br>      app.controller(‘myController’,[‘$scope’,’$rootScope’,function($scope,$rootScope){<br>            $scope.name = ‘仰光’;<br>            $rootScope.age = ‘22’;<br>      }])</p>
-<h1 id="V层"><a href="#V层" class="headerlink" title="V层"></a>V层</h1><pre><code>&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;myController&quot;&gt;
+<h1 id="M层"><a href="#M层" class="headerlink" title="M层"></a>M层</h1><h2 id="创建数据绑定"><a href="#创建数据绑定" class="headerlink" title="创建数据绑定"></a>创建数据绑定</h2><pre><code>var app = angular.module(&apos;myApp&apos;,[]);
+</code></pre><h2 id="作用域注入-局部作用域"><a href="#作用域注入-局部作用域" class="headerlink" title="作用域注入(局部作用域)"></a>作用域注入(局部作用域)</h2><pre><code>//$scope代表局部作用域、$rootScope代表全局作用域
+app.controller(&apos;myController&apos;,[&apos;$scope&apos;,&apos;$rootScope&apos;,function($scope,$rootScope){
+      $scope.name = &apos;仰光&apos;;
+      $rootScope.age = &apos;22&apos;;
+}])
+</code></pre><h1 id="V层"><a href="#V层" class="headerlink" title="V层"></a>V层</h1><pre><code>&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;myController&quot;&gt;
   {{name}}  //使用局部值name
 &lt;/div&gt;
 &lt;p&gt;{{age}}&lt;/p&gt; //使用全局age 不用注入作用域 ng-controller
@@ -358,14 +362,16 @@ $scope.evenFn = function(){
 var m2 = angular.module(&apos;myApp2&apos;,[]);
 var div = document.getElementsByTagName(&apos;div&apos;);
 </code></pre><p>  初始化:<br>         document.onclick = function(){<br>             angular.bootstrap(div[0],[‘myApp1’]);<br>             angular.bootstrap(div[1],[‘myApp2’]);<br>         }</p>
-<h1 id="路由-route"><a href="#路由-route" class="headerlink" title="路由 route"></a>路由 route</h1><h2 id="注意-引入的angular-js的版本要不小于angular-route-js的版本"><a href="#注意-引入的angular-js的版本要不小于angular-route-js的版本" class="headerlink" title="注意 引入的angular.js的版本要不小于angular.route.js的版本"></a>注意 引入的angular.js的版本要不小于angular.route.js的版本</h2><h3 id="单页应用spa"><a href="#单页应用spa" class="headerlink" title="单页应用spa"></a>单页应用spa</h3><pre><code> &lt;div id=&quot;box&quot; ng-controller=&quot;myController&quot;&gt;
-   &lt;a href=&quot;#/page1&quot;&gt;首页&lt;/a&gt;
-   &lt;a href=&quot;#/page2&quot;&gt;内容1&lt;/a&gt;
-   &lt;a href=&quot;#/page3&quot;&gt;内容2&lt;/a&gt;
-&lt;/div&gt;
- &lt;div ng-view&gt;&lt;/div&gt;
-</code></pre><p>  var app = angular.module(‘myAapp’,[‘ngRoute’]);<br>  app.controller(‘$scope’,function($scope){})</p>
-<h3 id="路由的设置"><a href="#路由的设置" class="headerlink" title="路由的设置"></a>路由的设置</h3><pre><code>  &lt;div id=&quot;box&quot;&gt;
+<h1 id="路由-route"><a href="#路由-route" class="headerlink" title="路由 route"></a>路由 route</h1><h2 id="注意-引入的angular-js的版本要不小于angular-route-js的版本"><a href="#注意-引入的angular-js的版本要不小于angular-route-js的版本" class="headerlink" title="注意 引入的angular.js的版本要不小于angular.route.js的版本"></a>注意 引入的angular.js的版本要不小于angular.route.js的版本</h2><h3 id="单页应用spa"><a href="#单页应用spa" class="headerlink" title="单页应用spa"></a>单页应用spa</h3><pre><code>  &lt;div id=&quot;box&quot; ng-controller=&quot;myController&quot;&gt;
+    &lt;a href=&quot;#/page1&quot;&gt;首页&lt;/a&gt;
+    &lt;a href=&quot;#/page2&quot;&gt;内容1&lt;/a&gt;
+    &lt;a href=&quot;#/page3&quot;&gt;内容2&lt;/a&gt;
+ &lt;/div&gt;
+  &lt;div ng-view&gt;&lt;/div&gt;
+
+var app = angular.module(&apos;myAapp&apos;,[&apos;ngRoute&apos;]);
+app.controller(&apos;$scope&apos;,function($scope){})
+</code></pre><h3 id="路由的设置"><a href="#路由的设置" class="headerlink" title="路由的设置"></a>路由的设置</h3><pre><code>  &lt;div id=&quot;box&quot;&gt;
     &lt;a href=&quot;#/page1&quot;&gt;首页&lt;/a&gt;
     &lt;a href=&quot;#/page2&quot;&gt;内容1&lt;/a&gt;
     &lt;a href=&quot;#/page3&quot;&gt;内容2&lt;/a&gt;
