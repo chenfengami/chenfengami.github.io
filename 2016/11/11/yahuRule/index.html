@@ -1,0 +1,866 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/sun_favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="前言内容再丰富的网站，如果慢到无法访问也是毫无意义的；SEO做的再好的网站，如果搜索蜘蛛抓不到也是白搭；UE设计的再人性化的网站，如果用户连看都看不到也是空谈。
+减少HTTP请求次数据统计，有80%的最终用户响应时间是花在前端程序上，而其大部分时间花在各种页面元素、如图像、样式表、脚本和Flash等的下载上，减少页面元素将会减少HTTP请求次数，只是快速显示页面的关键所在。
+Image maps组">
+<meta property="og:type" content="article">
+<meta property="og:title" content="雅虎优化14条规则">
+<meta property="og:url" content="http://yoursite.com/2016/11/11/yahuRule/index.html">
+<meta property="og:site_name" content="小太阳">
+<meta property="og:description" content="前言内容再丰富的网站，如果慢到无法访问也是毫无意义的；SEO做的再好的网站，如果搜索蜘蛛抓不到也是白搭；UE设计的再人性化的网站，如果用户连看都看不到也是空谈。
+减少HTTP请求次数据统计，有80%的最终用户响应时间是花在前端程序上，而其大部分时间花在各种页面元素、如图像、样式表、脚本和Flash等的下载上，减少页面元素将会减少HTTP请求次数，只是快速显示页面的关键所在。
+Image maps组">
+<meta property="og:updated_time" content="2016-11-11T12:23:25.792Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="雅虎优化14条规则">
+<meta name="twitter:description" content="前言内容再丰富的网站，如果慢到无法访问也是毫无意义的；SEO做的再好的网站，如果搜索蜘蛛抓不到也是白搭；UE设计的再人性化的网站，如果用户连看都看不到也是空谈。
+减少HTTP请求次数据统计，有80%的最终用户响应时间是花在前端程序上，而其大部分时间花在各种页面元素、如图像、样式表、脚本和Flash等的下载上，减少页面元素将会减少HTTP请求次数，只是快速显示页面的关键所在。
+Image maps组">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '6347927311345518000',
+      author: 'Amy'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/11/yahuRule/"/>
+
+
+  <title> 雅虎优化14条规则 | 小太阳 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">小太阳</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                雅虎优化14条规则
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-11T19:47:12+08:00" content="2016-11-11">
+              2016-11-11
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/11/yahuRule/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/11/yahuRule/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+                    
+          &nbsp; | &nbsp;
+          <span id="/2016/11/11/yahuRule/"class="leancloud_visitors" data-flag-title="雅虎优化14条规则">
+                   &nbsp;阅读次数
+                  </span>
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>内容再丰富的网站，如果慢到无法访问也是毫无意义的；SEO做的再好的网站，如果搜索蜘蛛抓不到也是白搭；UE设计的再人性化的网站，如果用户连看都看不到也是空谈。</p>
+<h1 id="减少HTTP请求次数"><a href="#减少HTTP请求次数" class="headerlink" title="减少HTTP请求次数"></a>减少HTTP请求次数</h1><p>据统计，有80%的最终用户响应时间是花在前端程序上，而其大部分时间花在各种页面元素、如图像、样式表、脚本和Flash等的下载上，减少页面元素将会减少HTTP请求次数，只是快速显示页面的关键所在。</p>
+<h2 id="Image-maps"><a href="#Image-maps" class="headerlink" title="Image maps"></a>Image maps</h2><p>组合个图片到一张图片上，总文件大小变化不大，但减少了HTTP的请求次数从而加快了页面显示速度，但该方式只适合图片连续的情况，同时坐标的定义烦人又容易出错。</p>
+<h2 id="CSS-Sprites"><a href="#CSS-Sprites" class="headerlink" title="CSS Sprites"></a>CSS Sprites</h2><p>雪碧图是更好的方法，它可以组合页面中的图片到单个文件中，并使用CSS的background-image和background-position属性来实现所需的部分图片。</p>
+<h2 id="Combined-files"><a href="#Combined-files" class="headerlink" title="Combined files"></a>Combined files</h2><p>通过组合多个脚本文件到单一文件来减少HTTP请求次数，样式表也可采用类似方法处理，这个方法虽然简单，但没有得到大规模的使用。<br>据马海祥博客收集的资料显示：国外10大网站每页平均有7个脚本文件和2个样式表，当页面之间脚本和样式表变化很大时，该方式将遇到很大的挑战，但如果做到的话，将能加快响应时间。<br>减少HTTP请求次数是性能优化的起点，这最提高首次访问的效率起到很重要的作用，据Tenni Theurer的文章Browser Cache Usage - Exposed描述，40-60%的日常访问是首次访问，因此为首次访问者加快页面访问速度是用户体验的关键。<br>对此，马海祥的建议是：将首页的几十个小图标合并为一个，通过CSS控制它们的显示，减少了HTTP请求数。</p>
+<h2 id="Inline-images"><a href="#Inline-images" class="headerlink" title="Inline images"></a>Inline images</h2><p>使用data:URL scheme来在页面中内嵌图片，这将增大HTML文件的大小，组合inline images到你的（缓存）样式表是既能较少HTTP请求，又能避免加大HTML文件大小的方法。</p>
+<h1 id="使用CDN-Content-Delivery-Network-内容分发网络"><a href="#使用CDN-Content-Delivery-Network-内容分发网络" class="headerlink" title="使用CDN(Content Delivery Network,内容分发网络)"></a>使用CDN(Content Delivery Network,内容分发网络)</h1><p>用户离web server的远近对响应时间也有很大影响，从用户角度看，把内容部署到多个地理位置分散的服务器上将有效提高页面装载速度，但是该从哪里开始呢？<br>作为实现内容地理分布的第一步，不要试图重构web应用以适应分布架构，改变架构将导致多个周期性任务，如同步session状态，在多个server之间复制数据库交易，这样缩短用户与内容距离的尝试可能被应用架构改版所延迟或阻止。<br>我们还记得80-90%的最终用户响应时间花在下载页面中的各种元素上，如图像文件、样式表、脚本和Flash等，与其花在重构系统这个困难的任务上，还不如先分布静态内容，这不仅能大大减少响应时间，而且由于CDN的存在，分布静态内容非常容易实现。<br>CDN是地理上分布的web server的集合，用于更高效地发布内容，通常基于网络远近来选择给具体用户服务的web server。<br>一些大型网站拥有自己的CDN，但是使用如Akamai Technologies、Mirror Image Internet或Limelight Networks等CDN服务提供商的服务将是划算的，在Yahoo!把静态内容分布到CDN减少了用户影响时间20%或更多，切换到CDN的代码修改工作是很容易的，但能达到提高网站的速度。<br>对此，马海祥的建议是：目前还没用到，不过据客户反映，广东山东等地网络情况比较差，如果可以将占据主要带宽的静态资源通过CDN发布，相信可以大大缓解目前网站访问速度的问题。</p>
+<h1 id="增加Expires-Header"><a href="#增加Expires-Header" class="headerlink" title="增加Expires Header"></a>增加Expires Header</h1><p>网页内容变得越来越丰富，这意味着更多的脚本文件、样式表、图像文件和Flash，首次访问者将不得不面对多次HTTP请求，但通过Expires header，您可以在客户端缓存这些元素，这在后续访问中避免了不必要的HTTP请求，Expires header最常用于图像文件，但是它也应用于脚本文件、样式表和Flash。<br>浏览器（和代理）使用缓存来减少HTTP请求的次数和大小，使得网页加速装载，Web server通过Expires header告诉客户端一个元素可以缓存的时间长度。<br>如果服务器是Apache的话，您可以使用ExpiresDefault基于当期日期来设置过期日期，如：ExpiresDefault “access plus 10 years”，设置过期时间为从请求时间开始计算的10年。<br>请记住，如果使用超长的过期时间，则当内容改变时，您必须修改文件名称，在Yahoo!我们经常把改名作为release的一个步骤：版本号内嵌在文件名中，如yahoo_2.0.6.js。<br>对此，马海祥的建议是：在Apache配置了JS,CSS,image的缓存，如果静态资源需要更新，则采用修改文件版本号的方案确保客户端取得最新版本。</p>
+<h1 id="压缩页面元素"><a href="#压缩页面元素" class="headerlink" title="压缩页面元素"></a>压缩页面元素</h1><p>通过压缩HTTP响应内容可减少页面响应时间，从HTTP/1.1开始，web客户端在HTTP请求中通过Accept-Encoding头来表明支持的压缩类型<br>–&gt; gulp<br>–&gt; webpack</p>
+<h1 id="把样式表放在头上"><a href="#把样式表放在头上" class="headerlink" title="把样式表放在头上"></a>把样式表放在头上</h1><p>无论是HTML还是XHTML还是CSS都是解释型的语言，而非编译型的，所以CSS到上方的话，那么浏览器解析结构的时候，就已经可以对页面进行渲染，这样就不会出现，页面结构光秃秃的先出来，然后CSS渲染，页面又突然华丽起来，这样太具有“戏剧性”的页面浏览体验了。<br>我们发现把样式表移到HEAD部分可以提高界面加载速度，因此这使得页面元素可以顺序显示。<br>在很多浏览器下，如IE，把样式表放在document的底部的问题在于它禁止了网页内容的顺序显示，浏览器阻止显示以免重画页面元素，那用户只能看到空白页了，Firefox不会阻止显示，但这意味着当样式表下载后，有些页面元素可能需要重画，这导致闪烁问题。<br>HTML规范明确要求样式表被定义在HEAD中，因此，为避免空白屏幕或闪烁问题，最好的办法是遵循HTML规范，把样式表放在HEAD中。</p>
+<h1 id="把脚本文件放在底部"><a href="#把脚本文件放在底部" class="headerlink" title="把脚本文件放在底部"></a>把脚本文件放在底部</h1><p>与样式文件一样，我们需要注意脚本文件的位置，我们需尽量把它们放在页面的底部，这样一方面能顺序显示，另方面可达到最大的并行下载。<br>浏览器会阻塞显示直到样式表下载完毕，因此我们需要把样式表放在HEAD部分，而对于脚本来说，脚本后面内容的顺序显示将被阻塞，因此把脚本尽量放在底部意味着更多内容能被快速显示。<br>脚本引起的第二个问题是它阻塞并行下载数量，HTTP/1.1规范建议浏览器每个主机的并行下载数不超过2个，因此如果您把图像文件分布到多台机器的话，您可以达到超过2个的并行下载，但是当脚本文件下载时，浏览器不会启动其他的并行下载，甚至其他主机的下载也不启动。<br>在某些情况下，不是很容易就能把脚本移到底部的，如，脚本使用document.write方法来插入页面内容，同时可能还存在域的问题，不过在很多情况下，还是有一些方法的。<br>一个备选方法是使用延迟脚本（deferred script），DEFER属性表明脚本未包含document.write，指示浏览器刻继续显示，不幸的是，Firefox不支持DEFER属性，在IE中，脚本可能被延迟执行，但不一定得到需要的长时间延迟。<br>不过，从另外角度来说，如果脚本能被延迟执行，那它就可以被放在底部了。</p>
+<h1 id="避免CSS表达式"><a href="#避免CSS表达式" class="headerlink" title="避免CSS表达式"></a>避免CSS表达式</h1><p>CSS表达式是功能强大的(同时也是危险的)用于动态设置CSS属性的方式，IE从版本5开始支持CSS表达式，如backgourd-color: expression((new Date()).getHours()%2?”#B8D4FF”:”#F08A00”)，即背景色每个小时切换一次。<br>CSS表达式的问题是其执行次数超过大部分人的期望，不仅页面显示和resize时计算表达式，而且当页面滚屏，甚至当鼠标在页面上移动时都会重新计算表达式。<br>一种减少CSS表达式执行次数的方法是一次性表达式，即当第一次执行时就以明确的数值代替表达式，如果必须动态设置的话，可使用事件处理函数代替，如果您必须使用CSS表达式的话，请记住它们可能被执行上千次，从而影响页面性能（具体可查看马海祥博客《资深Web前端开发工程师教你如何优化CSS框架》的相关介绍）。</p>
+<h1 id="把javascript和css放到外部文件中"><a href="#把javascript和css放到外部文件中" class="headerlink" title="把javascript和css放到外部文件中"></a>把javascript和css放到外部文件中</h1><p>上述很多性能优化法则都基于外部文件进行优化，现在，我们必须问一个问题：JavaScript和CSS应该包括在外部文件，还是在页面文件中？<br>在现实世界中，使用外部文件会加快页面显示速度，因为外部文件会被浏览器缓存，如果内置JavaScript和CSS在页面中虽然会减少HTTP请求次数，但增大了页面的大小。<br>另外一方面，使用外部文件，会被浏览器缓存，则页面大小会减小，同时又不增加HTTP请求次数。<br>因此，一般来说，外部文件是更可行的方式，唯一的例外是内嵌方式对主页更有效，如Yahoo!和My Yahoo!都使用内嵌方式，一般来说，在一个session中，主页访问此时较少，因此内嵌方式可以取得更快的用户响应时间。<br>对此，马海祥的建议是：ext2的代码作了很好的引导，目前前端开发人员都非常注意客户端模块的封装、重用，尽量以外部JS的方式提高代码的重用度，当然也要注意不要引入过多的外部资源，因为这违反了法则1。<br>目前CSS的封装也不错，但是主要是针对IE系列的解决方案，可以考虑引入YAML、blueprint等CSS框架，轻松解决浏览器兼容性问题。<br>另外，马海祥要提醒大家一点：把JavaScript和css文件放到外部，并不内嵌于网页，同时可以考虑把样式表放到头上把脚本文件放到底部。需要注意的是尽量不要使用css的表达式，他很容易让浏览器出现假死。</p>
+<h1 id="减少DNS查询次数"><a href="#减少DNS查询次数" class="headerlink" title="减少DNS查询次数"></a>减少DNS查询次数</h1><p>DNS用于映射主机名和IP地址，一般一次解析需要20～120毫秒，为达到更高的性能，DNS解析通常被多级别地缓存，如由ISP或局域网维护的caching server，本地机器操作系统的缓存（如windows上的DNS Client Service），浏览器，IE的缺省DNS缓存时间为30分钟，Firefox的缺省缓冲时间是1分钟。<br>减少主机名可减少DNS查询的次数，但可能造成并行下载数的减少，避免DNS查询可减少响应时间，而减少并行下载数可能增加响应时间，一个可行的折中是把内容分布到至少2个，最多4个不同的主机名上。<br>对此，马海祥的建议是：为了绕开浏览器对下载线程数的限制，我们对静态资源启用了多域名，但是这么做违反了该法则，不过，对windows IE来说，DNS的缓存可以缓解该问题。</p>
+<h1 id="最小化javascript代码"><a href="#最小化javascript代码" class="headerlink" title="最小化javascript代码"></a>最小化javascript代码</h1><p>最小化JavaScript代码指在JS代码中删除不必要的字符，从而降低下载时间，两个流行的工具是#JSMin和YUI Compressor。<br>混淆是最小化于源码的备选方式，象最小化一样，它通过删除注释和空格来减少源码大小，同时它还可以对代码进行混淆处理，作为混淆的一部分，函数名和变量名被替换成短的字符串，这使得代码更紧凑，同时也更难读，使得难于被反向工程，Dojo Compressor (ShrinkSafe)是最常见的混淆工具。<br>最小化是安全的、直白的过程，而混淆则更复杂，而且容易产生问题，从对国外10大网站的调查来看，通过最小化，文件可减少21%，而混淆则可减少25%（具体可查看马海祥博客《推荐一种测试javascript执行性能和性能比较的方法》的相关介绍）。<br>除了最小化外部脚本文件外，内嵌的脚本代码也应该被最小化，即使脚本根据法则4被压缩后传输，最小化脚本刻减少文件大小5%或更高。<br>对此，马海祥的建议是：我们没有直接使用JS压缩，但是我们用的许多组件例如ext2、jquery等，已经在为我们实践该法则。</p>
+<h1 id="避免重定向"><a href="#避免重定向" class="headerlink" title="避免重定向"></a>避免重定向</h1><p>重定向功能是通过301和302这两个HTTP状态码完成的，如：<br>HTTP/1.1 301 Moved Permanently<br>　　Location: <a href="http://mahaixiang.cn/newuri" target="_blank" rel="external">http://mahaixiang.cn/newuri</a><br>　　Content-Type: text/html<br>浏览器自动重定向请求到Location指定的URL上，重定向的主要问题是降低了用户体验。<br>一种最耗费资源、经常发生而很容易被忽视的重定向是URL的最后缺少/，如访问<a href="http://www.mahaixiang.cn/astrology将被重定向到http://www.mahaixiang.cn/astrology/，在Apache下，可以通过Alias，mod_rewrite或DirectorySlash等方式来解决该问题。" target="_blank" rel="external">http://www.mahaixiang.cn/astrology将被重定向到http://www.mahaixiang.cn/astrology/，在Apache下，可以通过Alias，mod_rewrite或DirectorySlash等方式来解决该问题。</a><br>经验丰富的SA已经为我们考虑了这个问题，对此，马海祥的建议是：大家可以看看线上环境的Apache配置文件：httpd.conf。</p>
+<h1 id="删除重复的脚本文件"><a href="#删除重复的脚本文件" class="headerlink" title="删除重复的脚本文件"></a>删除重复的脚本文件</h1><p>在一个页面中包含重复的JS脚本文件会影响性能，即它会建立不必要的HTTP请求和额外的JS执行。<br>不必要的HTTP请求发生在IE下，而Firefox不会产生多余的HTTP请求，额外的JS执行，不管在IE下，还是在Firefox下，都会发生。<br>一个避免重复的脚本文件的方式是使用模板系统来建立脚本管理模块，除了防止重复的脚本文件外，该模块还可以实现依赖性检查和增加版本号到脚本文件名中，从而实现超长的过期时间。<br>对此，马海祥的建议是：旧版本的Xplatform中这个问题比较严重，不过相信新版的XCube不会重蹈覆辙。<br>另外，提醒大家一点：一些javascript框架、javascript包一定要慎用，至少要问一下：用了这个js kit到底给我们多少方便，提高了多少工作效率，然后，再与它因为多余的、重复的代码带来的负面效果比较一下。</p>
+<h1 id="配置ETags"><a href="#配置ETags" class="headerlink" title="配置ETags"></a>配置ETags</h1><p>Etag（Entity tags）实体标签，这个tag和你在网上经常看到的标签云那种tag有点区别，这个Etag不是给用户用的，而是给浏览器缓存用的。<br>Etag是服务器告诉浏览器缓存，缓存中的内容是否已经发生变化的一种机制，通过Etag，浏览器就可以知道现在的缓存中的内容是不是最新的，需不需要重新从服务器上重新下载，这和“Last-Modified”的概念有点类似，很遗憾作为网页开发人员对此无能为力，他依然是网站服务器人员的工作范畴。<br>ETags是用于确定浏览器缓存中元素是否与Web server中的元素相匹配的机制，它是比last-modified date更灵活的元素验证机制。<br>ETag是用于唯一表示元素版本的字符串，它需被包括在引号中，Web server首先在response中指定ETag：<br>HTTP/1.1 200 OK<br>　　Last-Modified: Tue, 12 Dec 2006 03:03:59 GMT<br>　　ETag: “10c24bc-4ab-457e1c1f”<br>　　Content-Length: 12195<br>后来，如果浏览器需要验证某元素，它使用If-None-Match头回传ETag给Web server，如果ETag匹配，则服务器返回304代码，从而节省了下载时间：<br>GET /i/yahoo.gif HTTP/1.1<br>　　Host: mahaixiang.cn<br>　　If-Modified-Since: Tue, 12 Dec 2006 03:03:59 GMT<br>　　If-None-Match: “10c24bc-4ab-457e1c1f”<br>　　HTTP/1.1 304 Not Modified<br>ETags的问题在于它们是基于服务器唯一性的某些属性构造的，如Apache1.3和2.x，其格式是inode-size-timestamp，而在IIS5.0和6.0下，其格式是Filetimestamp:ChangeNumber。<br>这样同一个元素在不同的web server上，其ETag是不一样的，在多Web server的环境下，浏览器先从server1请求某元素，后来向server2验证该元素，由于ETag不同，所以缓存失效，必须重新下载。<br>因此，如果您未用到ETags系统提供的灵活的验证机制，最好删除ETag，删除ETag会减少http response及后续请求的HTTP头的大小，微软支持文章描述了如何删除ETags，而在Apache下，只要在配置文件中设置FileETag none即可。<br>对此，马海祥的建议是：自定义ETag的生成策略，以尽量减少探头规则的生成次数，由于不是采用服务器默认的ETag，不存在该问题，如果以前没有关注过的，赶快检查一下Apache中的配置。</p>
+<h1 id="缓存Ajax"><a href="#缓存Ajax" class="headerlink" title="缓存Ajax"></a>缓存Ajax</h1><p>现在的Ajax好像有点被神话了，好像网页只要Ajax了，那么就不存在效率问题了，其实这是一种误解，拙劣的使用Ajax不会让你的网页效率更高，反而会降低你的网页效率。<br>在马海祥看来，Ajax的确是个好东西，但是请不要过分的神话它，使用Ajax的时候也要考虑上面的那些准则。<br>另外，性能优化法则同样适用于web 2.0应用，提高Ajax的性能最重要的方式是使得其response可缓存，就象“法则3增加Expires Header”讨论的那样，以下其他法则同样适用于Ajax，当然法则3是最有效的方式。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat-reward-image.png" alt="ChaunceyAmy WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay-reward-image.png" alt="ChaunceyAmy Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/10/wx/" rel="next" title="订阅号开发文档">
+                <i class="fa fa-chevron-left"></i> 订阅号开发文档
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/11/yahuRule/"
+           data-title="雅虎优化14条规则" data-url="http://yoursite.com/2016/11/11/yahuRule/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/own.jpg"
+               alt="ChaunceyAmy" />
+          <p class="site-author-name" itemprop="name">ChaunceyAmy</p>
+          <p class="site-description motion-element" itemprop="description">身边有个太阳,何必仰光</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/chenfengami" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/chen-feng-89-44-54" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#减少HTTP请求次数"><span class="nav-number">2.</span> <span class="nav-text">减少HTTP请求次数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-maps"><span class="nav-number">2.1.</span> <span class="nav-text">Image maps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-Sprites"><span class="nav-number">2.2.</span> <span class="nav-text">CSS Sprites</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Combined-files"><span class="nav-number">2.3.</span> <span class="nav-text">Combined files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Inline-images"><span class="nav-number">2.4.</span> <span class="nav-text">Inline images</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用CDN-Content-Delivery-Network-内容分发网络"><span class="nav-number">3.</span> <span class="nav-text">使用CDN(Content Delivery Network,内容分发网络)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#增加Expires-Header"><span class="nav-number">4.</span> <span class="nav-text">增加Expires Header</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#压缩页面元素"><span class="nav-number">5.</span> <span class="nav-text">压缩页面元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#把样式表放在头上"><span class="nav-number">6.</span> <span class="nav-text">把样式表放在头上</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#把脚本文件放在底部"><span class="nav-number">7.</span> <span class="nav-text">把脚本文件放在底部</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#避免CSS表达式"><span class="nav-number">8.</span> <span class="nav-text">避免CSS表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#把javascript和css放到外部文件中"><span class="nav-number">9.</span> <span class="nav-text">把javascript和css放到外部文件中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#减少DNS查询次数"><span class="nav-number">10.</span> <span class="nav-text">减少DNS查询次数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最小化javascript代码"><span class="nav-number">11.</span> <span class="nav-text">最小化javascript代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#避免重定向"><span class="nav-number">12.</span> <span class="nav-text">避免重定向</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除重复的脚本文件"><span class="nav-number">13.</span> <span class="nav-text">删除重复的脚本文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置ETags"><span class="nav-number">14.</span> <span class="nav-text">配置ETags</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#缓存Ajax"><span class="nav-number">15.</span> <span class="nav-text">缓存Ajax</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ChaunceyAmy</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"content-amy"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("qmo2t7tH6gb3Nij0IwazplwD-gzGzoHsz", "W52FHf7EznsTCcSlQDdJ2awh");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  <!-- custom analytics part create by xiamo -->
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("qmo2t7tH6gb3Nij0IwazplwD-gzGzoHsz", "W52FHf7EznsTCcSlQDdJ2awh");</script>
+<script>
+function showTime(Counter) {
+	var query = new AV.Query(Counter);
+	$(".leancloud_visitors").each(function() {
+		var url = $(this).attr("id").trim();
+		query.equalTo("url", url);
+		query.find({
+			success: function(results) {
+				if (results.length == 0) {
+					var content = '0 ' + $(document.getElementById(url)).text();
+					$(document.getElementById(url)).text(content);
+					return;
+				}
+				for (var i = 0; i < results.length; i++) {
+					var object = results[i];
+					var content = '阅读次数' + ' ' + object.get('time');
+					$(document.getElementById(url)).text(content);
+				}
+
+			},
+			error: function(object, error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+
+	});
+}
+
+function addCount(Counter) {
+	var Counter = AV.Object.extend("Counter");
+	url = $(".leancloud_visitors").attr('id').trim();
+	title = $(".leancloud_visitors").attr('data-flag-title').trim();
+	var query = new AV.Query(Counter);
+	query.equalTo("url", url);
+	query.find({
+		success: function(results) {
+			if (results.length > 0) {
+				var counter = results[0];
+				counter.fetchWhenSave(true);
+				counter.increment("time");
+				counter.save(null, {
+					success: function(counter) {
+						var content = '阅读次数' + ' ' + counter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(counter, error) {
+						console.log('Failed to save Visitor num, with error message: ' + error.message);
+					}
+				});
+			} else {
+				var newcounter = new Counter();
+				newcounter.set("title", title);
+				newcounter.set("url", url);
+				newcounter.set("time", 1);
+				newcounter.save(null, {
+					success: function(newcounter) {
+					    console.log("newcounter.get('time')="+newcounter.get('time'));
+						var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(newcounter, error) {
+						console.log('Failed to create');
+					}
+				});
+			}
+		},
+		error: function(error) {
+			console.log('Error:' + error.code + " " + error.message);
+		}
+	});
+}
+$(function() {
+	var Counter = AV.Object.extend("Counter");
+	if ($('.leancloud_visitors').length == 1) {
+		addCount(Counter);
+	} else if ($('.post-title-link').length > 1) {
+		showTime(Counter);
+	}
+}); 
+</script>
+
+  
+</body>
+</html>
