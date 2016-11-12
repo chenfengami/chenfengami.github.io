@@ -647,6 +647,8 @@
 <!--粒子库-->
 <script src="js/particleground.js"></script>
 <script src="js/particle.js"></script>
+<script src="../js/particleground.js"></script>
+<script src="../js/particle.js"></script>
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
 <script>AV.initialize("qmo2t7tH6gb3Nij0IwazplwD-gzGzoHsz", "W52FHf7EznsTCcSlQDdJ2awh");</script>
 <script>
@@ -732,7 +734,6 @@ $(function() {
 //粒子效果
 var oBody = document.getElementsByTagName('body')[0];
 var oParticles = document.createElement('div');
-console.log(oBody.scrollHeight);
 oParticles.id="particles";
 oParticles.style.width = '100%';
 oParticles.style.height = oBody.scrollHeight+"px";
@@ -748,7 +749,6 @@ new Particleground.particle( '#particles' ,{
     // 在定位点半径为100内的所有粒子，两粒子圆心点之间满足dis，则连线
     range: 500
 });
-
 </script>
 
   
