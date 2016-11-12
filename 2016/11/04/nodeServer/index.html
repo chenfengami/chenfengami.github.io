@@ -100,7 +100,7 @@ npm install express
 npm install express
 创建node server 如下var http = require(‘http’); //请求http
 创建服务器http">
-<meta property="og:updated_time" content="2016-11-12T02:33:24.017Z">
+<meta property="og:updated_time" content="2016-11-12T02:54:12.152Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="node 简单服务创建">
 <meta name="twitter:description" content="首先是安装node.js点击这个链接进入nodejs首页 http://www.nodejs.org
@@ -195,12 +195,12 @@ npm install express
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            关于
+            分类
           </a>
         </li>
       
@@ -221,6 +221,16 @@ npm install express
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -289,6 +299,25 @@ npm install express
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/node服务/" itemprop="url" rel="index">
+                    <span itemprop="name">node服务</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -470,6 +499,13 @@ npm install express
             </a>
           </div>
 
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -793,6 +829,8 @@ npm install express
 
   
   <!-- custom analytics part create by xiamo -->
+<!--粒子库-->
+<script src="js/jquery.particleground.min.js"></script>
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
 <script>AV.initialize("qmo2t7tH6gb3Nij0IwazplwD-gzGzoHsz", "W52FHf7EznsTCcSlQDdJ2awh");</script>
 <script>
@@ -874,6 +912,23 @@ $(function() {
 		showTime(Counter);
 	}
 }); 
+
+//粒子效果
+var oBody = document.getElementsByTagName('body')[0];
+var oParticles = document.createElement('div');
+console.log(oBody.scrollHeight);
+oParticles.id="particles";
+oParticles.style.width = '100%';
+oParticles.style.height = oBody.scrollHeight+"px";
+oParticles.style.position = 'absolute';
+oParticles.style.left = 0;
+oParticles.style.top = 0;
+oParticles.style.zIndex=-1;
+oBody.appendChild(oParticles);
+$('#particles').particleground({
+    dotColor: '#999',
+    lineColor: '#ddd'
+});
 </script>
 
   

@@ -84,16 +84,33 @@
 
 
 
-<meta name="description" content="身边有个太阳,何必仰光">
+<meta name="description" content="关于我
+仰光
+前端
+摸爬带滚
+漫粉–&amp;gt;《喰种》、《猎人》、《寄生兽》、《海贼》、《亚人》
+K歌达人–&amp;gt;五月天、vae、哥哥、张震岳、Eason、Jay">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="小太阳">
-<meta property="og:description" content="身边有个太阳,何必仰光">
-<meta property="og:updated_time" content="2016-11-12T02:17:27.374Z">
+<meta property="og:description" content="关于我
+仰光
+前端
+摸爬带滚
+漫粉–&amp;gt;《喰种》、《猎人》、《寄生兽》、《海贼》、《亚人》
+K歌达人–&amp;gt;五月天、vae、哥哥、张震岳、Eason、Jay">
+<meta property="og:image" content="http://yoursite.com/../images/about.jpg">
+<meta property="og:updated_time" content="2016-11-12T03:16:33.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
-<meta name="twitter:description" content="身边有个太阳,何必仰光">
+<meta name="twitter:description" content="关于我
+仰光
+前端
+摸爬带滚
+漫粉–&amp;gt;《喰种》、《猎人》、《寄生兽》、《海贼》、《亚人》
+K歌达人–&amp;gt;五月天、vae、哥哥、张震岳、Eason、Jay">
+<meta name="twitter:image" content="http://yoursite.com/../images/about.jpg">
 
 
 
@@ -186,12 +203,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            关于
+            分类
           </a>
         </li>
       
@@ -212,6 +229,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -245,7 +272,13 @@
   <div id="posts" class="posts-expand">
     
     
-      
+      <p></p><h2>关于我</h2><p></p>
+<p></p><p>仰光</p><p></p>
+<p></p><p>前端</p><p></p>
+<p></p><p>摸爬带滚</p><p></p>
+<p></p><p>漫粉–&gt;《喰种》、《猎人》、《寄生兽》、《海贼》、《亚人》</p><p></p>
+<p></p><p>K歌达人–&gt;五月天、vae、哥哥、张震岳、Eason、Jay</p><br><img src="../images/about.jpg"><p></p>
+
     
   </div>
 
@@ -255,14 +288,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="about/index.html"
-           data-title="about" data-url="http://yoursite.com/about/index.html">
-      </div>
-    
-  </div>
-
 
         </div>
         
@@ -299,6 +324,13 @@
             </a>
           </div>
 
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -607,6 +639,8 @@
 
   
   <!-- custom analytics part create by xiamo -->
+<!--粒子库-->
+<script src="js/jquery.particleground.min.js"></script>
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
 <script>AV.initialize("qmo2t7tH6gb3Nij0IwazplwD-gzGzoHsz", "W52FHf7EznsTCcSlQDdJ2awh");</script>
 <script>
@@ -688,6 +722,23 @@ $(function() {
 		showTime(Counter);
 	}
 }); 
+
+//粒子效果
+var oBody = document.getElementsByTagName('body')[0];
+var oParticles = document.createElement('div');
+console.log(oBody.scrollHeight);
+oParticles.id="particles";
+oParticles.style.width = '100%';
+oParticles.style.height = oBody.scrollHeight+"px";
+oParticles.style.position = 'absolute';
+oParticles.style.left = 0;
+oParticles.style.top = 0;
+oParticles.style.zIndex=-1;
+oBody.appendChild(oParticles);
+$('#particles').particleground({
+    dotColor: '#999',
+    lineColor: '#ddd'
+});
 </script>
 
   

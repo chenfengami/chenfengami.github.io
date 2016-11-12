@@ -181,12 +181,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            关于
+            分类
           </a>
         </li>
       
@@ -207,6 +207,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -278,6 +288,25 @@
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/模块、工程化/" itemprop="url" rel="index">
+                    <span itemprop="name">模块、工程化</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -393,6 +422,25 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/笔记随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">笔记随笔</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -486,7 +534,7 @@ re.test(str);//如果str里有a，则返回true,否则返回false
             
               
                 
-                <a class="post-title-link" href="/2016/10/31/hello-world/" itemprop="url">
+                <a class="post-title-link" href="/2016/10/31/divPosition/" itemprop="url">
                   五种小div在大div中水平垂直居中方法
                 </a>
               
@@ -506,13 +554,32 @@ re.test(str);//如果str里有a，则返回true,否则返回false
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/div技巧/" itemprop="url" rel="index">
+                    <span itemprop="name">div技巧</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/31/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/31/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/10/31/divPosition/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/31/divPosition/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -521,7 +588,7 @@ re.test(str);//如果str里有a，则返回true,否则返回false
           
                     
           &nbsp; | &nbsp;
-          <span id="/2016/10/31/hello-world/"class="leancloud_visitors" data-flag-title="五种小div在大div中水平垂直居中方法">
+          <span id="/2016/10/31/divPosition/"class="leancloud_visitors" data-flag-title="五种小div在大div中水平垂直居中方法">
                    &nbsp;阅读次数
                   </span>
           
@@ -552,7 +619,7 @@ re.test(str);//如果str里有a，则返回true,否则返回false
           ...
 
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/31/hello-world/#more" rel="contents">
+            <a class="btn" href="/2016/10/31/divPosition/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -632,6 +699,13 @@ re.test(str);//如果str里有a，则返回true,否则返回false
             </a>
           </div>
 
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -940,6 +1014,8 @@ re.test(str);//如果str里有a，则返回true,否则返回false
 
   
   <!-- custom analytics part create by xiamo -->
+<!--粒子库-->
+<script src="js/jquery.particleground.min.js"></script>
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
 <script>AV.initialize("qmo2t7tH6gb3Nij0IwazplwD-gzGzoHsz", "W52FHf7EznsTCcSlQDdJ2awh");</script>
 <script>
@@ -1021,6 +1097,23 @@ $(function() {
 		showTime(Counter);
 	}
 }); 
+
+//粒子效果
+var oBody = document.getElementsByTagName('body')[0];
+var oParticles = document.createElement('div');
+console.log(oBody.scrollHeight);
+oParticles.id="particles";
+oParticles.style.width = '100%';
+oParticles.style.height = oBody.scrollHeight+"px";
+oParticles.style.position = 'absolute';
+oParticles.style.left = 0;
+oParticles.style.top = 0;
+oParticles.style.zIndex=-1;
+oBody.appendChild(oParticles);
+$('#particles').particleground({
+    dotColor: '#999',
+    lineColor: '#ddd'
+});
 </script>
 
   

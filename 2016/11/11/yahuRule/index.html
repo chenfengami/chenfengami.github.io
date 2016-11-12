@@ -94,7 +94,7 @@ Image maps组">
 <meta property="og:description" content="前言内容再丰富的网站，如果慢到无法访问也是毫无意义的；SEO做的再好的网站，如果搜索蜘蛛抓不到也是白搭；UE设计的再人性化的网站，如果用户连看都看不到也是空谈。
 减少HTTP请求次数据统计，有80%的最终用户响应时间是花在前端程序上，而其大部分时间花在各种页面元素、如图像、样式表、脚本和Flash等的下载上，减少页面元素将会减少HTTP请求次数，只是快速显示页面的关键所在。
 Image maps组">
-<meta property="og:updated_time" content="2016-11-12T02:34:07.620Z">
+<meta property="og:updated_time" content="2016-11-12T02:51:38.280Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="雅虎优化14条规则">
 <meta name="twitter:description" content="前言内容再丰富的网站，如果慢到无法访问也是毫无意义的；SEO做的再好的网站，如果搜索蜘蛛抓不到也是白搭；UE设计的再人性化的网站，如果用户连看都看不到也是空谈。
@@ -186,12 +186,12 @@ Image maps组">
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            关于
+            分类
           </a>
         </li>
       
@@ -212,6 +212,16 @@ Image maps组">
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -280,6 +290,25 @@ Image maps组">
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/阅读知识/" itemprop="url" rel="index">
+                    <span itemprop="name">阅读知识</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -468,6 +497,13 @@ Image maps组">
             </a>
           </div>
 
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -791,6 +827,8 @@ Image maps组">
 
   
   <!-- custom analytics part create by xiamo -->
+<!--粒子库-->
+<script src="js/jquery.particleground.min.js"></script>
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
 <script>AV.initialize("qmo2t7tH6gb3Nij0IwazplwD-gzGzoHsz", "W52FHf7EznsTCcSlQDdJ2awh");</script>
 <script>
@@ -872,6 +910,23 @@ $(function() {
 		showTime(Counter);
 	}
 }); 
+
+//粒子效果
+var oBody = document.getElementsByTagName('body')[0];
+var oParticles = document.createElement('div');
+console.log(oBody.scrollHeight);
+oParticles.id="particles";
+oParticles.style.width = '100%';
+oParticles.style.height = oBody.scrollHeight+"px";
+oParticles.style.position = 'absolute';
+oParticles.style.left = 0;
+oParticles.style.top = 0;
+oParticles.style.zIndex=-1;
+oBody.appendChild(oParticles);
+$('#particles').particleground({
+    dotColor: '#999',
+    lineColor: '#ddd'
+});
 </script>
 
   

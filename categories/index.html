@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="小太阳">
 <meta property="og:description" content="身边有个太阳,何必仰光">
-<meta property="og:updated_time" content="2016-11-01T05:41:18.692Z">
+<meta property="og:updated_time" content="2016-11-12T02:50:01.184Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="身边有个太阳,何必仰光">
@@ -121,7 +121,7 @@
   
 
   
-    categories | 小太阳
+    分类 | 小太阳
   
 </title>
 </head>
@@ -186,12 +186,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            关于
+            分类
           </a>
         </li>
       
@@ -212,6 +212,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -245,7 +255,14 @@
   <div id="posts" class="posts-expand">
     
     
-      
+      <div class="category-all-page">
+        <div class="category-all-title">
+            目前共计 6 个分类
+        </div>
+        <div class="category-all">
+          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/div技巧/">div技巧</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/node服务/">node服务</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/协议、线程/">协议、线程</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/模块、工程化/">模块、工程化</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/笔记随笔/">笔记随笔</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/阅读知识/">阅读知识</a><span class="category-list-count">1</span></li></ul>
+        </div>
+      </div>
     
   </div>
 
@@ -255,14 +272,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="categories/index.html"
-           data-title="categories" data-url="http://yoursite.com/categories/index.html">
-      </div>
-    
-  </div>
-
 
         </div>
         
@@ -299,6 +308,13 @@
             </a>
           </div>
 
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -607,6 +623,8 @@
 
   
   <!-- custom analytics part create by xiamo -->
+<!--粒子库-->
+<script src="js/jquery.particleground.min.js"></script>
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
 <script>AV.initialize("qmo2t7tH6gb3Nij0IwazplwD-gzGzoHsz", "W52FHf7EznsTCcSlQDdJ2awh");</script>
 <script>
@@ -688,6 +706,23 @@ $(function() {
 		showTime(Counter);
 	}
 }); 
+
+//粒子效果
+var oBody = document.getElementsByTagName('body')[0];
+var oParticles = document.createElement('div');
+console.log(oBody.scrollHeight);
+oParticles.id="particles";
+oParticles.style.width = '100%';
+oParticles.style.height = oBody.scrollHeight+"px";
+oParticles.style.position = 'absolute';
+oParticles.style.left = 0;
+oParticles.style.top = 0;
+oParticles.style.zIndex=-1;
+oBody.appendChild(oParticles);
+$('#particles').particleground({
+    dotColor: '#999',
+    lineColor: '#ddd'
+});
 </script>
 
   
