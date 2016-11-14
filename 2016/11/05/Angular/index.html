@@ -94,7 +94,7 @@ M层创建数据绑定var app =">
 <meta property="og:description" content="介绍AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
 使用使用前需引入angular.js(尽量使用1.5、1.8版本,其他版本容易出问题)
 M层创建数据绑定var app =">
-<meta property="og:updated_time" content="2016-11-12T02:54:15.499Z">
+<meta property="og:updated_time" content="2016-11-14T03:46:45.455Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Angular">
 <meta name="twitter:description" content="介绍AngularJS 诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。
@@ -349,7 +349,7 @@ M层创建数据绑定var app =">
 </code></pre><h2 id="作用域注入-局部作用域"><a href="#作用域注入-局部作用域" class="headerlink" title="作用域注入(局部作用域)"></a>作用域注入(局部作用域)</h2><pre><code>//$scope代表局部作用域、$rootScope代表全局作用域
 app.controller(&apos;myController&apos;,[&apos;$scope&apos;,&apos;$rootScope&apos;,function($scope,$rootScope){
       $scope.name = &apos;仰光&apos;;
-      $rootScope.age = &apos;22&apos;;
+      $rootScope.age = &apos;23&apos;;
 }])
 </code></pre><h1 id="V层"><a href="#V层" class="headerlink" title="V层"></a>V层</h1><pre><code>&lt;div ng-app=&quot;myApp&quot; ng-controller=&quot;myController&quot;&gt;
   {{name}}  //使用局部值name
@@ -372,7 +372,7 @@ app.controller(&apos;myController&apos;,[&apos;$scope&apos;,&apos;$rootScope&apo
 </code></pre><h1 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h1><pre><code> app.controller(&apos;myController&apos;,function($scope){
 #scope.dataList = {
    &apos;namae&apos; : &apos;仰光&apos;,
-   &apos;age&apos; : &apos;22&apos;,
+   &apos;age&apos; : &apos;23&apos;,
    &apos;sex&apos; : &apos;man&apos;
    }
 })

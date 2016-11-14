@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/11/04/webPack/index.html">
 <meta property="og:site_name" content="小太阳">
 <meta property="og:description" content="介绍webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们后">
-<meta property="og:updated_time" content="2016-11-12T02:53:22.506Z">
+<meta property="og:updated_time" content="2016-11-14T04:20:57.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webPack">
 <meta name="twitter:description" content="介绍webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们后">
@@ -340,7 +340,7 @@
         <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>webpack是近期最火的一款模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。<br>我们可以直接使用 require(XXX) 的形式来引入各模块，即使它们可能需要经过编译（比如JSX和sass），但我们无须在上面花费太多心思，因为 webpack 有着各种健全的加载器（loader）在默默处理这些事情，这块我们后续会提到。<br>你可以不打算将其用在你的项目上，但没有理由不去掌握它，因为以近期 Github 上各大主流的（React相关）项目来说，它们仓库上所展示的示例已经是基于 webpack 来开发的，比如 React-Boostrap 和 Redux。<br>webpack的官网是 <a href="http://webpack.github.io/" target="_blank" rel="external">http://webpack.github.io/</a> ，文档地址是 <a href="http://webpack.github.io/docs/" target="_blank" rel="external">http://webpack.github.io/docs/</a> ，想对其进行更详细了解的可以点进去瞧一瞧。</p>
 <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="全局安装"><a href="#全局安装" class="headerlink" title="全局安装"></a>全局安装</h2><p>npm install webpack -g</p>
 <h2 id="局部安装依赖"><a href="#局部安装依赖" class="headerlink" title="局部安装依赖"></a>局部安装依赖</h2><p>npm init</p>
-<p>npm install webpack –sadv-dev</p>
+<p>npm install webpack –save-dev</p>
 <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>每个项目下必须配置有一个 webpack.config.js,它的作用如同gulpfile.js/Gruntfile.js,就是一个配置项，告诉webpack它需要做什么。</p>
 <p>局部安装模块<br>cnpm install sass-loader -D<br>cnpm install css-loader -D<br>cnpm install style-loader -D<br>cnpm install url-loader -D<br>…<br>例子:<br>     var webpack = require(‘webpack’); //请求加载webpack模块<br>     module.exports = {<br>       //页面入口位置<br>       entry : {<br>          index : ‘./xxx’ // ./当前目录下的xxx文件<br>          //支持数组形式，将加载数组中的所有模块，但以最后一个模块进行输出<br>          //index[‘./xxx1’,’./xxx2’]<br>       },<br>       //入口文件输出配置<br>       output : {<br>          path : ‘./xxx’,   //设置输出文件路径<br>          filename : ‘boundle.js’ //设置输出的文件名称(css、scss、所有压缩打包输出的文件)<br>       },<br>       module : {<br>             //加载器配置<br>             loaders : [<br>                   //.scss 文件使用 style-loader 和 css-loader 和 sass-loader 来编译处理<br>                   { test : /.scss$/, loader: ‘style-loader!css-loader!sass-loader’}, //其中-loader可以省略<br>                   //.js 文件使用 jsx-loader 来编译处理<br>                   { test : /.js$/, loader: ‘jsx-loader’},<br>                   //.css 文件使用 style-loader 和 css-loader 来编译处理<br>                   { test : /.css$/, loader: ‘style-loader!css-loader’},<br>                   //图片文件使用 url-loader 来编译处理,小于8kb的直接转为base64<br>                   { test : /.(png|jpg)$/, loader : ‘url-loader’}<br>             ]<br>       }<br> }</p>
 <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>最后直接引用输出的文件 ./xxx/boundle.js即可</p>
