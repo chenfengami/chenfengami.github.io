@@ -84,15 +84,34 @@
 
 
 
-<meta name="description" content="身边有个太阳,何必仰光">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小太阳">
-<meta property="og:url" content="http://yoursite.com/archives/2016/11/index.html">
+<meta name="description" content="1. 安装plugins : (plugins)
+cordova plugin add cordova-plugin-camera
+cordova plugin add https://github.com/phonegap/phonegap-plugin-barcodescanner.git
+
+2. bower install ngCordova 
+
+3. 在cordova.js之前引入ng-c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cordova开发">
+<meta property="og:url" content="http://yoursite.com/2016/11/17/Cordova/index.html">
 <meta property="og:site_name" content="小太阳">
-<meta property="og:description" content="身边有个太阳,何必仰光">
+<meta property="og:description" content="1. 安装plugins : (plugins)
+cordova plugin add cordova-plugin-camera
+cordova plugin add https://github.com/phonegap/phonegap-plugin-barcodescanner.git
+
+2. bower install ngCordova 
+
+3. 在cordova.js之前引入ng-c">
+<meta property="og:updated_time" content="2016-11-24T13:32:50.613Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小太阳">
-<meta name="twitter:description" content="身边有个太阳,何必仰光">
+<meta name="twitter:title" content="cordova开发">
+<meta name="twitter:description" content="1. 安装plugins : (plugins)
+cordova plugin add cordova-plugin-camera
+cordova plugin add https://github.com/phonegap/phonegap-plugin-barcodescanner.git
+
+2. bower install ngCordova 
+
+3. 在cordova.js之前引入ng-c">
 
 
 
@@ -113,10 +132,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2016/11/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/17/Cordova/"/>
 
 
-  <title> 归档 | 小太阳 </title>
+  <title> cordova开发 | 小太阳 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -137,7 +156,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -245,292 +264,156 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 12 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                cordova开发
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-17T17:05:58+08:00" content="2016-11-17">
+              2016-11-17
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/17/Cordova/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/17/Cordova/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+                    
+          &nbsp; | &nbsp;
+          <span id="/2016/11/17/Cordova/"class="leancloud_visitors" data-flag-title="cordova开发">
+                   &nbsp;阅读次数
+                  </span>
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <pre><code>1. 安装plugins : (plugins)
+cordova plugin add cordova-plugin-camera
+cordova plugin add https://github.com/phonegap/phonegap-plugin-barcodescanner.git
+
+2. bower install ngCordova 
+
+3. 在cordova.js之前引入ng-corodva.js
+
+4. 在angular.module(&quot;root&quot;,[&quot;ngCordova&quot;])
+</code></pre>
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat-reward-image.png" alt="ChaunceyAmy WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
       
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay-reward-image.png" alt="ChaunceyAmy Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
+    <footer class="post-footer">
+      
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/17/Cordova/" itemprop="url">
-              
-                <span itemprop="name">cordova开发</span>
-              
-            </a>
-        
-      </h1>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/12/vue/" rel="next" title="初识Vue(待更新)">
+                <i class="fa fa-chevron-left"></i> 初识Vue(待更新)
+              </a>
+            
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-17T17:05:58+08:00"
-              content="2016-11-17" >
-          11-17
-        </time>
-      </div>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/12/vue/" itemprop="url">
-              
-                <span itemprop="name">初识Vue(待更新)</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-12T17:59:42+08:00"
-              content="2016-11-12" >
-          11-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/11/yahuRule/" itemprop="url">
-              
-                <span itemprop="name">雅虎优化14条规则</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-11T19:47:12+08:00"
-              content="2016-11-11" >
-          11-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/10/wx/" itemprop="url">
-              
-                <span itemprop="name">订阅号开发文档</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-10T22:28:00+08:00"
-              content="2016-11-10" >
-          11-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/05/Angular/" itemprop="url">
-              
-                <span itemprop="name">Angular</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-05T11:40:19+08:00"
-              content="2016-11-05" >
-          11-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/04/webPack/" itemprop="url">
-              
-                <span itemprop="name">webPack</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-04T22:19:56+08:00"
-              content="2016-11-04" >
-          11-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="//schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/11/04/webSocket/" itemprop="url">
-              
-                <span itemprop="name">webSocket</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-04T20:50:55+08:00"
-              content="2016-11-04" >
-          11-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2016/11/page/2/">2</a><a class="extend next" rel="next" href="/archives/2016/11/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -538,6 +421,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/11/17/Cordova/"
+           data-title="cordova开发" data-url="http://yoursite.com/2016/11/17/Cordova/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -557,8 +448,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/own.jpg"
@@ -628,6 +528,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -731,11 +642,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
 
 
   

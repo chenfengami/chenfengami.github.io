@@ -88,8 +88,7 @@
 验证是否安装成功window+R 打开输入 cmd 再输入 node -v 查看版本号
 #安装node之后安装express模块插件
 npm install express
-创建node server 如下var http = require(‘http’); //请求http
-创建服务器http">
+创建node server 如下var http = require(&amp;apos;http&amp;apos;); //请求http">
 <meta property="og:type" content="article">
 <meta property="og:title" content="node 简单服务创建">
 <meta property="og:url" content="http://yoursite.com/2016/11/04/nodeServer/index.html">
@@ -98,17 +97,15 @@ npm install express
 验证是否安装成功window+R 打开输入 cmd 再输入 node -v 查看版本号
 #安装node之后安装express模块插件
 npm install express
-创建node server 如下var http = require(‘http’); //请求http
-创建服务器http">
-<meta property="og:updated_time" content="2016-11-12T02:54:12.152Z">
+创建node server 如下var http = require(&amp;apos;http&amp;apos;); //请求http">
+<meta property="og:updated_time" content="2016-11-24T13:33:00.265Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="node 简单服务创建">
 <meta name="twitter:description" content="首先是安装node.js点击这个链接进入nodejs首页 http://www.nodejs.org
 验证是否安装成功window+R 打开输入 cmd 再输入 node -v 查看版本号
 #安装node之后安装express模块插件
 npm install express
-创建node server 如下var http = require(‘http’); //请求http
-创建服务器http">
+创建node server 如下var http = require(&amp;apos;http&amp;apos;); //请求http">
 
 
 
@@ -356,11 +353,15 @@ npm install express
 <h1 id="验证是否安装成功"><a href="#验证是否安装成功" class="headerlink" title="验证是否安装成功"></a>验证是否安装成功</h1><p>window+R 打开输入 cmd 再输入 node -v 查看版本号</p>
 <p>#安装node之后安装express模块插件</p>
 <p>npm install express</p>
-<h1 id="创建node-server-如下"><a href="#创建node-server-如下" class="headerlink" title="创建node server 如下"></a>创建node server 如下</h1><p>var http = require(‘http’); //请求http</p>
-<h1 id="创建服务器"><a href="#创建服务器" class="headerlink" title="创建服务器"></a>创建服务器</h1><p>http.createServer(function(req,res){<br>    res.end(‘create a server success!’);<br>}).listen(3000); //创建一个服务器端口 端口号为3000</p>
-<p>打开浏览器输入:<a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a></p>
-<h1 id="npm-server-js-server是我们所创建的文件"><a href="#npm-server-js-server是我们所创建的文件" class="headerlink" title="npm server.js //server是我们所创建的文件"></a>npm server.js //server是我们所创建的文件</h1><h2 id="解决cmd下显示乱码问题"><a href="#解决cmd下显示乱码问题" class="headerlink" title="解决cmd下显示乱码问题"></a>解决cmd下显示乱码问题</h2><p>res.setHeader(‘content-type’,’text/html;charset=UTF-8’);</p>
-
+<h1 id="创建node-server-如下"><a href="#创建node-server-如下" class="headerlink" title="创建node server 如下"></a>创建node server 如下</h1><pre><code>var http = require(&apos;http&apos;); //请求http
+</code></pre><h1 id="创建服务器"><a href="#创建服务器" class="headerlink" title="创建服务器"></a>创建服务器</h1><pre><code>//req 表示客户端请求
+//res 服务器返回
+http.createServer(function(req,res){
+    res.end(&apos;create a server success!&apos;);
+}).listen(3000); //创建一个服务器端口 端口号为3000
+</code></pre><p>打开浏览器输入:<a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a></p>
+<h1 id="node-server-server是我们所创建的文件"><a href="#node-server-server是我们所创建的文件" class="headerlink" title="node server //server是我们所创建的文件"></a>node server //server是我们所创建的文件</h1><h2 id="解决cmd下显示乱码问题"><a href="#解决cmd下显示乱码问题" class="headerlink" title="解决cmd下显示乱码问题"></a>解决cmd下显示乱码问题</h2><pre><code>res.setHeader(&apos;content-type&apos;,&apos;text/html;charset=UTF-8&apos;);
+</code></pre>
       
     </div>
 
@@ -494,7 +495,7 @@ npm install express
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -560,7 +561,7 @@ npm install express
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#首先是安装node-js"><span class="nav-number">1.</span> <span class="nav-text">首先是安装node.js</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#验证是否安装成功"><span class="nav-number">2.</span> <span class="nav-text">验证是否安装成功</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建node-server-如下"><span class="nav-number">3.</span> <span class="nav-text">创建node server 如下</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建服务器"><span class="nav-number">4.</span> <span class="nav-text">创建服务器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#npm-server-js-server是我们所创建的文件"><span class="nav-number">5.</span> <span class="nav-text">npm server.js //server是我们所创建的文件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决cmd下显示乱码问题"><span class="nav-number">5.1.</span> <span class="nav-text">解决cmd下显示乱码问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#首先是安装node-js"><span class="nav-number">1.</span> <span class="nav-text">首先是安装node.js</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#验证是否安装成功"><span class="nav-number">2.</span> <span class="nav-text">验证是否安装成功</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建node-server-如下"><span class="nav-number">3.</span> <span class="nav-text">创建node server 如下</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建服务器"><span class="nav-number">4.</span> <span class="nav-text">创建服务器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#node-server-server是我们所创建的文件"><span class="nav-number">5.</span> <span class="nav-text">node server //server是我们所创建的文件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决cmd下显示乱码问题"><span class="nav-number">5.1.</span> <span class="nav-text">解决cmd下显示乱码问题</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
