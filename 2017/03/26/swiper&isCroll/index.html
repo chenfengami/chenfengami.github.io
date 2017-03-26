@@ -84,16 +84,19 @@
 
 
 
-<meta name="description" content="#解决将属性href绑定在swiper-slide上动态获取，具体代码如下:    var startY,startX,endX,endY,oIndex;    var href = [];    $(‘.swiper-drag .swiper-slide’).on(‘touchstart’,function(){      oIndex = $(this).index();    })    v">
+<meta name="description" content="#解决
+##将属性href绑定在swiper-slide上动态获取，并且判断滑动X差值记性判断是否是在点击或者滑动状态    具体代码如下:    var startY,startX,endX,endY,oIndex;    var href = [];    $(‘.swiper-drag .swiper-slide’).on(‘touchstart’,function(){      oInd">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iScroll、swiper同时使用滑动触发链接跳转问题解决、">
+<meta property="og:title" content="iScroll、swiper同时使用滑动触发链接跳转问题解决">
 <meta property="og:url" content="http://yoursite.com/2017/03/26/swiper&isCroll/index.html">
 <meta property="og:site_name" content="小太阳">
-<meta property="og:description" content="#解决将属性href绑定在swiper-slide上动态获取，具体代码如下:    var startY,startX,endX,endY,oIndex;    var href = [];    $(‘.swiper-drag .swiper-slide’).on(‘touchstart’,function(){      oIndex = $(this).index();    })    v">
-<meta property="og:updated_time" content="2017-03-26T08:25:05.218Z">
+<meta property="og:description" content="#解决
+##将属性href绑定在swiper-slide上动态获取，并且判断滑动X差值记性判断是否是在点击或者滑动状态    具体代码如下:    var startY,startX,endX,endY,oIndex;    var href = [];    $(‘.swiper-drag .swiper-slide’).on(‘touchstart’,function(){      oInd">
+<meta property="og:updated_time" content="2017-03-26T08:28:08.067Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iScroll、swiper同时使用滑动触发链接跳转问题解决、">
-<meta name="twitter:description" content="#解决将属性href绑定在swiper-slide上动态获取，具体代码如下:    var startY,startX,endX,endY,oIndex;    var href = [];    $(‘.swiper-drag .swiper-slide’).on(‘touchstart’,function(){      oIndex = $(this).index();    })    v">
+<meta name="twitter:title" content="iScroll、swiper同时使用滑动触发链接跳转问题解决">
+<meta name="twitter:description" content="#解决
+##将属性href绑定在swiper-slide上动态获取，并且判断滑动X差值记性判断是否是在点击或者滑动状态    具体代码如下:    var startY,startX,endX,endY,oIndex;    var href = [];    $(‘.swiper-drag .swiper-slide’).on(‘touchstart’,function(){      oInd">
 
 
 
@@ -117,7 +120,7 @@
   <link rel="canonical" href="http://yoursite.com/2017/03/26/swiper&isCroll/"/>
 
 
-  <title> iScroll、swiper同时使用滑动触发链接跳转问题解决、 | 小太阳 </title>
+  <title> iScroll、swiper同时使用滑动触发链接跳转问题解决 | 小太阳 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -267,7 +270,7 @@
             
             
               
-                iScroll、swiper同时使用滑动触发链接跳转问题解决、
+                iScroll、swiper同时使用滑动触发链接跳转问题解决
               
             
           </h1>
@@ -300,7 +303,7 @@
           
                     
           &nbsp; | &nbsp;
-          <span id="/2017/03/26/swiper&isCroll/"class="leancloud_visitors" data-flag-title="iScroll、swiper同时使用滑动触发链接跳转问题解决、">
+          <span id="/2017/03/26/swiper&isCroll/"class="leancloud_visitors" data-flag-title="iScroll、swiper同时使用滑动触发链接跳转问题解决">
                    &nbsp;阅读次数
                   </span>
           
@@ -318,7 +321,8 @@
       
 
       
-        <p>#解决<br>将属性href绑定在swiper-slide上动态获取，具体代码如下:<br>    var startY,startX,endX,endY,oIndex;<br>    var href = [];<br>    $(‘.swiper-drag .swiper-slide’).on(‘touchstart’,function(){<br>      oIndex = $(this).index();<br>    })<br>    var mySwiper = new Swiper(‘.swiper-drag’,{<br>          slidesPerView: ‘auto’,<br>          paginationClickable: true,<br>          slidesOffsetAfter: 16,<br>          freeMode: true,<br>      onTouchStart: function(swiper,event){<br>          var touch = event.touches[0];<br>          startY = touch.pageY;<br>          startX = touch.pageX;<br>      },<br>      onTouchMove: function(swiper,event){<br>          var touch = event.touches[0];<br>          endX = touch.pageX-startX;<br>          endY = touch.pageY-startY;<br>      },<br>      onTouchEnd: function(swiper){<br>        // setTimeout(function(){<br>        // },250)<br>          if(Math.abs(endX)&gt;5){<br>              endX=0;<br>              return false;<br>          }else{<br>            for(var i=0;i&lt;$(‘.swiper-drag .swiper-slide’).length;i++){<br>                  href.push($(‘.swiper-drag .swiper-slide’).eq(i).attr(‘href’));<br>            }<br>                  self.location = href[oIndex];<br>            endX=0;<br>          }<br>      }</p>
+        <p>#解决</p>
+<p>##将属性href绑定在swiper-slide上动态获取，并且判断滑动X差值记性判断是否是在点击或者滑动状态<br>    具体代码如下:<br>    var startY,startX,endX,endY,oIndex;<br>    var href = [];<br>    $(‘.swiper-drag .swiper-slide’).on(‘touchstart’,function(){<br>      oIndex = $(this).index();<br>    })<br>    var mySwiper = new Swiper(‘.swiper-drag’,{<br>          slidesPerView: ‘auto’,<br>          paginationClickable: true,<br>          slidesOffsetAfter: 16,<br>          freeMode: true,<br>      onTouchStart: function(swiper,event){<br>          var touch = event.touches[0];<br>          startY = touch.pageY;<br>          startX = touch.pageX;<br>      },<br>      onTouchMove: function(swiper,event){<br>          var touch = event.touches[0];<br>          endX = touch.pageX-startX;<br>          endY = touch.pageY-startY;<br>      },<br>      onTouchEnd: function(swiper){<br>        // setTimeout(function(){<br>        // },250)<br>          if(Math.abs(endX)&gt;5){<br>              endX=0;<br>              return false;<br>          }else{<br>            for(var i=0;i&lt;$(‘.swiper-drag .swiper-slide’).length;i++){<br>                  href.push($(‘.swiper-drag .swiper-slide’).eq(i).attr(‘href’));<br>            }<br>                  self.location = href[oIndex];<br>            endX=0;<br>          }<br>      }</p>
 <pre><code>});
 </code></pre>
       
@@ -405,7 +409,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/03/26/swiper&isCroll/"
-           data-title="iScroll、swiper同时使用滑动触发链接跳转问题解决、" data-url="http://yoursite.com/2017/03/26/swiper&isCroll/">
+           data-title="iScroll、swiper同时使用滑动触发链接跳转问题解决" data-url="http://yoursite.com/2017/03/26/swiper&isCroll/">
       </div>
     
   </div>
